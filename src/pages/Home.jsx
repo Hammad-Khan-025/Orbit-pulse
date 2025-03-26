@@ -40,6 +40,21 @@ const Home = () => {
       description:
         "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
     },
+    {
+      title: "UI/UX DESIGN",
+      description:
+        "Offering adaptable on-site support to meet your unique operational needs. Our team provides personalized assistance, ensuring seamless integration and immediate solutions wherever you are.",
+    },
+    {
+      title: "WEB & APP DEVELOPMENT",
+      description:
+        "Building robust, scalable technology foundations that support your business’s growth and stability. From network architecture to data security, we ensure seamless, resilient IT environments.",
+    },
+    {
+      title: "E-LEARNING TRAINING COURSES",
+      description:
+        "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
+    },
   ];
 
   const features = [
@@ -63,12 +78,12 @@ const Home = () => {
   return (
     <article>
       <div className="relative">
-        <img src={mainImage} alt="" />
-        <div className="bg-[#1D51A2B2] absolute bottom-12 left-0 w-full text-white text-center py-8 shadow shadow-white">
-          <h1 className="text-4xl font-semibold main-h1 mb-3">
+        <img src={mainImage} alt="" className="h-72 sm:h-auto" />
+        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white text-center py-5 sm:py-8 shadow shadow-white px-5">
+          <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
             EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
           </h1>
-          <p>
+          <p className="text-xs">
             We start with understanding your “Problem Statement”.and, Tailor
             Solutions & Services that “Fit Your Business Needs”.
           </p>
@@ -76,16 +91,16 @@ const Home = () => {
       </div>
 
       {/* Header Section */}
-      <section className="text-center my-14">
-        <h1 className="text-4xl font-bold text-[#FCB813]">
+      <section className="text-center my-14 font-bangla px-3">
+        <h1 className="text-2xl sm:text-4xl font-bold text-[#FCB813] ">
           EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
         </h1>
         <div className="max-w-5xl mx-auto">
-          <p className="text-lg md:text-xl text-[#00BDFF] mt-4">
+          <p className="text-lg sm:text-2xl text-[#00BDFF] mt-4">
             AS YOUR BUSINESS EVOLVES, OUR IT SOLUTIONS SEAMLESSLY ADAPT, LETTING
             YOU CONCENTRATE ON INNOVATION.
           </p>
-          <p className="mt-6 text-gray-700 text-base md:text-lg">
+          <p className="mt-6 text-gray-700 text-base md:text-lg max-w-4xl mx-auto">
             While "<b>You</b>" harness creativity to enhance your enterprise, "
             <b>We</b>" accelerate your time to market, amplify organizational
             performance, and ensure you stay competitive. Our extensive global
@@ -99,13 +114,13 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section>
+      <section className="px-3">
         <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8">
           SUPPORTING YOUR JOURNEY
         </h2>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 place-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 place-items-center items-stretch">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -117,9 +132,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-10">
+      <section className="flex flex-col items-center py-10 px-3">
       {/* Title Section */}
-      <h2 className="text-xl md:text-2xl lg:text-3xl text-[#047BAF] font-bold mb-4 mt-10">
+      <h2 className="text-xl md:text-2xl lg:text-3xl text-[#047BAF] font-bold mb-4 mt-10 text-center">
         DOWNLOAD OUR COMPANY PROFILE
       </h2>
       
@@ -133,14 +148,14 @@ const Home = () => {
         <img
           src={companyProfile}
           alt="Company Profile"
-          className="max-w-[35rem] h-auto"
+          className="w-full sm:max-w-[35rem] h-auto"
         />
       </div>
 
     </section>
 
     {/* why choose me section */}
-    <section>
+    <section className="px-3">
     <div className="max-w-5xl mx-auto">
     <div className="max-w-4xl mx-auto">
           <hr className="mt-10 border-gray-300 " />
@@ -154,14 +169,14 @@ const Home = () => {
     </div>
 
     <div className="flex justify-center pt-8">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-5">
       {features.map((feature, index) => (
         <div
           key={index}
-          className="flex flex-col items-center text-center w-96 mx-auto"
+          className="flex flex-col items-center text-center w-full sm:w-96 "
         >
           <div className="bg-[#F5F5F5] w-full flex justify-center items-center h-40 py-32">
-          <img src={feature.image} alt={feature.title} className="w-60" />
+          <img src={feature.image} alt={feature.title} className="w-40 sm:w-60" />
           </div>
           <h3 className="text-xl font-bold text-[#00BDFF] mb-2 mt-8">{feature.title}</h3>
           <p className="text-[#5E5E5E] text-sm">{feature.description}</p>
@@ -175,7 +190,7 @@ const Home = () => {
     </section>
 
     {/* Flexible on-site/map section */}
-    <section className="flex flex-col md:flex-row justify-center items-center gap-20 p-6">
+    <section className="flex flex-col md:flex-row justify-center items-center gap-20 sm:p-6 px-3">
       <div className="flex flex-col space-y-8 w-72">
         <div className="border-b border-gray-300 pb-4">
           <h3 className="text-xl font-bold text-blue-500">FLEXIBLE-ON SITE</h3>

@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500;700&display=swap');
 
 @import "tailwindcss";
 
-body {
+/* body {
     @apply font-[glegoo];
+  } */
+
+  @theme{
+    --font-malayalam: "Anek Malayalam", "sans-serif";
+    --font-bangla: "Anek Bangla", "sans-serif";
+    --font-glegoo: "Glegoo", "sans-serif";
   }
