@@ -176,7 +176,7 @@ const Home = () => {
           className="flex flex-col items-center text-center w-full sm:w-96 "
         >
           <div className="bg-[#F5F5F5] w-full flex justify-center items-center h-40 py-32">
-          <img src={feature.image} alt={feature.title} className="w-40 sm:w-60" />
+          <img src={feature.image} alt={feature.title} className="w-60" />
           </div>
           <h3 className="text-xl font-bold text-[#00BDFF] mb-2 mt-8">{feature.title}</h3>
           <p className="text-[#5E5E5E] text-sm">{feature.description}</p>
