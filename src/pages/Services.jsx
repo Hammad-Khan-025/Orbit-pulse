@@ -3,6 +3,7 @@ import mainImage from "../assets/servicesImages/mainImage.png";
 import keyOfferingImage from "../assets/servicesImages/keyOfferingImage.png";
 import image1 from "../assets/servicesImages/image1.png";
 import image2 from "../assets/servicesImages/image2.png";
+import ITimage from "../assets/servicesImages/IT-ServiceImage.png";
 
 const Services = () => {
   const onboardingSteps = [
@@ -115,6 +116,52 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Manage IT services section */}
+      <section className="flex flex-col lg:flex-row items-center justify-evenly px-6 lg:px-16 py-10">
+        {/* Left Content */}
+        <div className="max-w-[30rem] text-center lg:text-left">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center">
+            BENEFITS OF MANAGED <br /> IT SERVICES
+          </h2>
+          <p className="text-[#5E5E5E] mb-4">
+            At IP Global, we understand the transformative power of managed
+            services. Our offerings ensure businesses operate at their peak,
+            liberating them from the intricacies of IT management.
+          </p>
+          <p className="text-[#047BAF] mb-4 font-semibold">
+            By choosing Orbit Pulse 365 managed services, companies can direct
+            their energies to core objectives, knowing their IT infrastructure
+            is in expert hands.
+          </p>
+          <p className="text-[#5E5E5E] mb-4">
+            We offer a cost-efficient solution that eliminates the need for
+            extensive in-house IT teams and mitigates unforeseen expenses.
+            <br />
+            <br />
+            With our 24/7 support, businesses can enjoy unwavering uptime,
+            fortified data security, and the guarantee of swift issue
+            resolution. Partnering with IP Global is a strategic step towards
+            unparalleled operational excellence.
+          </p>
+        </div>
+
+        {/* Right Content - Placeholder for Image */}
+        <div className="mt-8 lg:mt-0 lg:ml-8">
+          <img
+            src={ITimage}
+            alt="Benefits of Managed IT Services"
+            className="w-full max-w-lg"
+          />
+        </div>
+      </section>
+
+      {/* border line */}
+      <div className="flex items-center max-w-[40rem] mx-auto px-5">
+        <div className="flex-grow h-px bg-gray-300"></div>
+        <div className="w-32  sm:w-72 h-2 bg-[#1D51A2] rounded"></div>
+        <div className="flex-grow h-px bg-gray-300"></div>
+      </div>
 
       {/* onboarding process */}
       <section className="flex justify-center mx-5">
