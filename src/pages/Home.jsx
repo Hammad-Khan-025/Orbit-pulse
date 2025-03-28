@@ -121,7 +121,7 @@ const Home = () => {
         </h2>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 place-items-center items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 place-items-center items-stretch px-2 sm:px-0">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -194,7 +194,7 @@ const Home = () => {
     <section className="flex flex-col md:flex-row justify-center items-center gap-20 sm:p-6 px-3 text-sm">
       <div className="flex flex-col space-y-8 w-72">
         <div className="border-b border-gray-300 pb-4">
-          <h3 className="text-xl font-bold text-blue-500">FLEXIBLE-ON SITE</h3>
+          <h3 className="text-xl font-bold text-[#00BDFF]">FLEXIBLE-ON SITE</h3>
           <p className="text-gray-600 flex flex-col gap-1 mt-1">
             <span>ORBIT PULSE 365 Ltd.</span>
             <span>St Helens 1 Undershaft, London</span>
@@ -206,7 +206,7 @@ const Home = () => {
         </div>
 
         <div className="border-b border-gray-300 pb-4">
-          <h3 className="text-xl font-bold text-blue-500">FLEXIBLE-ON SITE</h3>
+          <h3 className="text-xl font-bold text-[#00BDFF]">FLEXIBLE-ON SITE</h3>
           <p className="text-gray-600 flex flex-col gap-1 mt-1">
             <span>ORBIT PULSE 365 Ltd.</span>
             <span>St Helens 1 Undershaft, London</span>
