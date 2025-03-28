@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import logo from '../assets/orbitpulse-logo.png';
+import { Link } from 'react-router-dom';
+import logo from '../assets/homeImages/orbitpulse-logo.png';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoMdClose } from "react-icons/io"; // Import Close Icon
+import { IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -22,11 +23,19 @@ const Header = () => {
       {/* Navigation Menu */}
       <div className="hidden lg:flex items-center gap-32">
         <ul className="flex gap-8 text-[#8D8D8D]">
-          {['Home', 'About Us', 'Services', 'Contact Us'].map((item) => (
-            <li key={item}>
-              <button className="hover:text-[#FCB813] cursor-pointer relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#FCB813] before:transition-all before:duration-300 hover:before:w-full">
-                {item}
-              </button>
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about-us' },
+            { name: 'Services', path: '/services' },
+            { name: 'Contact Us', path: '/contact-us' },
+          ].map(({ name, path }) => (
+            <li key={name}>
+              <Link
+                to={path}
+                className="hover:text-[#FCB813] cursor-pointer relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#FCB813] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                {name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -42,11 +51,20 @@ const Header = () => {
         }`}
       >
         <ul className="flex flex-col gap-4 text-[#8D8D8D] text-center">
-          {['Home', 'About Us', 'Services', 'Contact Us'].map((item) => (
-            <li key={item}>
-              <button className="hover:text-[#FCB813] cursor-pointer relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#FCB813] before:transition-all before:duration-300 hover:before:w-full">
-                {item}
-              </button>
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about-us' },
+            { name: 'Services', path: '/services' },
+            { name: 'Contact Us', path: '/contact-us' },
+          ].map(({ name, path }) => (
+            <li key={name}>
+              <Link
+                to={path}
+                className="hover:text-[#FCB813] cursor-pointer relative before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#FCB813] before:transition-all before:duration-300 hover:before:w-full"
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                {name}
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -6,16 +7,16 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 mx-auto max-w-6xl">
         {/* Newsletter Section */}
         <div>
-          <h3 className="mb-4 text-lg md:text-xl text-center sm:text-start">
+          <h3 className="mb-4 text-lg  text-center sm:text-start">
             Join our newsletter to stay up to date on features and releases.
           </h3>
           <div className="flex items-center flex-wrap gap-4 space-x-2 my-5">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-full text-black bg-white focus:outline-none"
+              className="flex-1 px-6 py-3 sm:py-4 rounded-full text-black bg-white focus:outline-none"
             />
-            <button className="bg-[#F2C146] text-white px-6 py-4 rounded-full font-semibold hover:bg-yellow-500 cursor-pointer">
+            <button className="bg-[#F2C146] text-white px-6 py-3 sm:py-4 rounded-full font-semibold hover:bg-yellow-500 cursor-pointer">
               Subscribe
             </button>
           </div>
@@ -28,22 +29,22 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="flex flex-col">
-          <div className="flex flex-row justify-between text-lg">
+          <div className="flex flex-row justify-between text-lg sm:text-xl">
             <h1>Navigation</h1>
             <h1 className="">Follow Us</h1>
           </div>
           <ul className="flex justify-between flex-wrap mt-6 gap-4 md:gap-0 text-sm md:text-base">
             <li>
-              <a href="#">Home</a>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <Link to='/about-us'>About Us</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to='/services'>Services</Link>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to='/contact-us'>Contact Us</Link>
             </li>
           </ul>
         </div>

@@ -1,12 +1,11 @@
 import React from "react";
-import mainImage from "../assets/mainImage.png";
-import companyProfile from "../assets/companyProfileLogo.png";
-import feature1Img from "../assets/feature1Img.png";
-import feature2Img from "../assets/feature2Img.png";
-import feature3Img from "../assets/feature3Img.png";
-import mapImg from "../assets/mapImg.png";
+import mainImage from "../assets/homeImages/mainImage.png";
+import companyProfile from "../assets/homeImages/companyProfileLogo.png";
+import feature1Img from "../assets/homeImages/feature1Img.png";
+import feature2Img from "../assets/homeImages/feature2Img.png";
+import feature3Img from "../assets/homeImages/feature3Img.png";
+import mapImg from "../assets/homeImages/mapImg.png";
 import ServiceCard from "../components/ServiceCard";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const services = [
@@ -79,14 +78,16 @@ const Home = () => {
     <article>
       <div className="relative">
         <img src={mainImage} alt="" className="h-72 sm:h-auto" />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white text-center py-5 sm:py-8 shadow shadow-white px-5">
+        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center">
+          <div>
           <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
             EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
           </h1>
-          <p className="text-xs">
+          <p className="text-xs sm:text-base">
             We start with understanding your “Problem Statement”.and, Tailor
             Solutions & Services that “Fit Your Business Needs”.
           </p>
+          </div>
         </div>
       </div>
 
@@ -190,7 +191,7 @@ const Home = () => {
     </section>
 
     {/* Flexible on-site/map section */}
-    <section className="flex flex-col md:flex-row justify-center items-center gap-20 sm:p-6 px-3">
+    <section className="flex flex-col md:flex-row justify-center items-center gap-20 sm:p-6 px-3 text-sm">
       <div className="flex flex-col space-y-8 w-72">
         <div className="border-b border-gray-300 pb-4">
           <h3 className="text-xl font-bold text-blue-500">FLEXIBLE-ON SITE</h3>
@@ -225,8 +226,6 @@ const Home = () => {
         />
       </div>
     </section>
-
-    <Footer/>
 
     </article>
   );
