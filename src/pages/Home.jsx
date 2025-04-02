@@ -59,18 +59,21 @@ const Home = () => {
   const features = [
     {
       image: `${feature1Img}`,
-      title: '365 GLOBAL COVERAGE',
-      description: "Anytime, Anywhere – Our services span the globe, ensuring you have support day or night.",
+      title: "365 GLOBAL COVERAGE",
+      description:
+        "Anytime, Anywhere – Our services span the globe, ensuring you have support day or night.",
     },
     {
-      image: `${feature2Img}`, 
-      title: 'EXPERT ENGINEER',
-      description: "Experience You Can Trust – Our seasoned professionals provide swift responses and detailed insights to keep your operations running smoothly.",
+      image: `${feature2Img}`,
+      title: "EXPERT ENGINEER",
+      description:
+        "Experience You Can Trust – Our seasoned professionals provide swift responses and detailed insights to keep your operations running smoothly.",
     },
     {
       image: `${feature3Img}`,
-      title: 'ONE-SITE-SUPPORT',
-      description: "Your Eyes and Hands – Our engineers act as an extension of your team, expertly handling on-site challenges to ensure end-user satisfaction.",
+      title: "ONE-SITE-SUPPORT",
+      description:
+        "Your Eyes and Hands – Our engineers act as an extension of your team, expertly handling on-site challenges to ensure end-user satisfaction.",
     },
   ];
 
@@ -80,13 +83,13 @@ const Home = () => {
         <img src={mainImage} alt="" className="h-72 sm:h-auto" />
         <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center">
           <div>
-          <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-            EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
-          </h1>
-          <p className="text-xs sm:text-base">
-            We start with understanding your “Problem Statement”.and, Tailor
-            Solutions & Services that “Fit Your Business Needs”.
-          </p>
+            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
+              EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
+            </h1>
+            <p className="text-xs sm:text-base">
+              We start with understanding your “Problem Statement”.and, Tailor
+              Solutions & Services that “Fit Your Business Needs”.
+            </p>
           </div>
         </div>
       </div>
@@ -109,7 +112,7 @@ const Home = () => {
             expertise, and unwavering integrity.
           </p>
           <div className="max-w-4xl mx-auto">
-          <hr className="mt-10 border-gray-300 " />
+            <hr className="mt-10 border-gray-300 " />
           </div>
         </div>
       </section>
@@ -121,7 +124,7 @@ const Home = () => {
         </h2>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 place-items-center items-stretch px-2 sm:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 items-stretch px-2 sm:px-0">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -134,99 +137,112 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col items-center py-10 px-3">
-      {/* Title Section */}
-      <h2 className="text-xl md:text-2xl lg:text-3xl text-[#047BAF] font-bold mb-4 mt-10 text-center">
-        DOWNLOAD OUR COMPANY PROFILE
-      </h2>
-      
-      {/* Download Button */}
-      <button className="bg-[#1D51A2] hover:bg-[#2E69D6] text-white font-semibold py-2 px-6 rounded-lg mb-10 cursor-pointer">
-        DOWNLOAD PROFILE
-      </button>
-          
-            {/* Profile Image */}
-            <div className="flex justify-center bg-[#EAEAEA80] w-full">
-        <img
-          src={companyProfile}
-          alt="Company Profile"
-          className="w-full sm:max-w-[35rem] h-auto"
-        />
-      </div>
-
-    </section>
-
-    {/* why choose me section */}
-    <section className="px-3">
-    <div className="max-w-5xl mx-auto">
-    <div className="max-w-4xl mx-auto">
-          <hr className="mt-10 border-gray-300 " />
-          </div>
-    <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8 mt-12">
-          WHY CHOOSE US?
+        {/* Title Section */}
+        <h2 className="text-xl md:text-2xl lg:text-3xl text-[#047BAF] font-bold mb-4 mt-10 text-center">
+          DOWNLOAD OUR COMPANY PROFILE
         </h2>
-        <p className="text-[#5E5E5E] text-center">
-        At Orbit pals, we understand every step of your business process. That’s why we ensure no detail is overlooked, whether it’s meeting SLAs or dispatching expert engineers to remote locations for hardware issues.
-        </p>
-    </div>
 
-    <div className="flex justify-center pt-8">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-5">
-      {features.map((feature, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center text-center w-full sm:w-96 "
-        >
-          <div className="bg-[#F5F5F5] w-full flex justify-center items-center h-40 py-32">
-          <img src={feature.image} alt={feature.title} className="w-60" />
+        {/* Download Button */}
+        <button className="bg-[#1D51A2] hover:bg-[#2E69D6] text-white font-semibold py-2 px-6 rounded-lg mb-10 cursor-pointer">
+          DOWNLOAD PROFILE
+        </button>
+
+        {/* Profile Image */}
+        <div className="flex justify-center bg-[#EAEAEA80] w-full">
+          <img
+            src={companyProfile}
+            alt="Company Profile"
+            className="w-full sm:max-w-[35rem] h-auto"
+          />
+        </div>
+      </section>
+
+      {/* why choose me section */}
+      <section className="px-3">
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <hr className="mt-10 border-gray-300 " />
           </div>
-          <h3 className="text-xl font-bold text-[#00BDFF] mb-2 mt-8">{feature.title}</h3>
-          <p className="text-[#5E5E5E] text-sm">{feature.description}</p>
-        </div>
-      ))}
-    </div>
-    </div>
-    <div className="my-8 max-w-4xl mx-auto">
-    <hr className="mt-10 border-gray-300" />
-    </div>
-    </section>
-
-    {/* Flexible on-site/map section */}
-    <section className="flex flex-col md:flex-row justify-center items-center gap-20 sm:p-6 px-3 text-sm">
-      <div className="flex flex-col space-y-8 w-72">
-        <div className="border-b border-gray-300 pb-4">
-          <h3 className="text-xl font-bold text-[#00BDFF]">FLEXIBLE-ON SITE</h3>
-          <p className="text-gray-600 flex flex-col gap-1 mt-1">
-            <span>ORBIT PULSE 365 Ltd.</span>
-            <span>St Helens 1 Undershaft, London</span>
-            <span>EC3P 3DQ</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8 mt-12">
+            WHY CHOOSE US?
+          </h2>
+          <p className="text-[#5E5E5E] text-center">
+            At Orbit pals, we understand every step of your business process.
+            That’s why we ensure no detail is overlooked, whether it’s meeting
+            SLAs or dispatching expert engineers to remote locations for
+            hardware issues.
           </p>
-          <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
-            Learn More
-          </button>
         </div>
 
-        <div className="border-b border-gray-300 pb-4">
-          <h3 className="text-xl font-bold text-[#00BDFF]">FLEXIBLE-ON SITE</h3>
-          <p className="text-gray-600 flex flex-col gap-1 mt-1">
-            <span>ORBIT PULSE 365 Ltd.</span>
-            <span>St Helens 1 Undershaft, London</span>
-            <span>EC3P 3DQ</span>
-          </p>
-          <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
-            Learn More
-          </button>
+        <div className="flex justify-center pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-5">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="group flex flex-col items-center text-center w-full sm:w-96"
+              >
+                <div className="bg-[#F5F5F5] w-full flex justify-center items-center h-40 py-32 group-hover:bg-[#00BDFF] group-hover:rotate-y-180 transform transition duration-500 perspective-1000">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-60 group-hover:rotate-y-180 transform transition duration-500"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-[#00BDFF] mb-2 mt-8 group-hover:text-[#005A99] transition duration-300">
+                  {feature.title}
+                </h3>
+                <p className="text-[#5E5E5E] text-sm group-hover:text-[#333333] transition duration-300">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+        <div className="my-8 max-w-4xl mx-auto">
+          <hr className="mt-10 border-gray-300" />
+        </div>
+      </section>
 
-      <div>
-        <img
-          src= {mapImg}
-          alt="World Map with Icons"
-          className="w-full max-w-3xl"
-        />
-      </div>
-    </section>
+      {/* Flexible on-site/map section */}
+      <section className="flex flex-col md:flex-row justify-center items-center gap-10 sm:gap-20 sm:p-6 px-3 text-sm mb-10 sm:mb-16">
+        <div className="flex flex-col space-y-8 w-72">
+          <div className="border-b border-gray-300 pb-4">
+            <h3 className="text-xl font-bold text-[#00BDFF]">
+              FLEXIBLE-ON SITE
+            </h3>
+            <p className="text-gray-600 flex flex-col gap-1 mt-1">
+              <span>ORBIT PULSE 365 Ltd.</span>
+              <span>St Helens 1 Undershaft, London</span>
+              <span>EC3P 3DQ</span>
+            </p>
+            <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
+              Learn More
+            </button>
+          </div>
 
+          <div className="border-b border-gray-300 pb-4">
+            <h3 className="text-xl font-bold text-[#00BDFF]">
+              FLEXIBLE-ON SITE
+            </h3>
+            <p className="text-gray-600 flex flex-col gap-1 mt-1">
+              <span>ORBIT PULSE 365 Ltd.</span>
+              <span>St Helens 1 Undershaft, London</span>
+              <span>EC3P 3DQ</span>
+            </p>
+            <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src={mapImg}
+            alt="World Map with Icons"
+            className="w-full max-w-3xl"
+          />
+        </div>
+      </section>
     </article>
   );
 };

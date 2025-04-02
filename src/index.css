@@ -11,3 +11,16 @@
   --font-glegoo: "Glegoo", "sans-serif";
   --font-kannada: "Anek Kannada", "sans-serif";
 }
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+  .rotate-x-6 {
+    transform: rotateX(6deg);
+  }
+  .-rotate-y-6 {
+    transform: rotateY(-6deg);
+  }
+}
+
+

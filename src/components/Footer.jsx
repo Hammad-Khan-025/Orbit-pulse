@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3EA3DE] text-white py-14 px-6 mt-20 font-malayalam">
+    <footer className="bg-[#3EA3DE] text-white py-14 px-6 font-malayalam">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 mx-auto max-w-6xl">
         {/* Newsletter Section */}
         <div>
@@ -35,16 +35,16 @@ const Footer = () => {
           </div>
           <ul className="flex justify-between flex-wrap mt-6 gap-4 md:gap-0 text-sm md:text-base">
             <li>
-              <Link to='/'>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to='/about-us'>About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to='/services'>Services</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <Link to='/contact-us'>Contact Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>

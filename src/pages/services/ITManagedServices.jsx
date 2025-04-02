@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import mainImage from "../assets/servicesImages/mainImage.png";
-import keyOfferingImage from "../assets/servicesImages/keyOfferingImage.png";
-import image1 from "../assets/servicesImages/image1.png";
-import image2 from "../assets/servicesImages/image2.png";
-import ITimage from "../assets/servicesImages/IT-ServiceImage.png";
+import mainImage from "../../assets/servicesImages/IT-managed-services/IT-managed-services-img.png";
+import keyOfferingImage from "../../assets/servicesImages/IT-managed-services/keyOfferingImage.png";
+import image1 from "../../assets/servicesImages/IT-managed-services/image1.png";
+import image2 from "../../assets/servicesImages/IT-managed-services/image2.png";
+import ITimage from "../../assets/servicesImages/IT-managed-services/IT-service-benefits-img.png";
+import ITimageMobile from "../../assets/servicesImages/IT-managed-services/IT-benefits-mobile-img.png";
+import BorderLine from "../../components/BorderLine";
 
 const Services = () => {
   const onboardingSteps = [
@@ -36,7 +38,8 @@ const Services = () => {
   const questions = [
     {
       title: "Easy Setup",
-      description: "Get started quickly with a simple 4 steps process.",
+      description:
+        "Get started quickly with a simple 4 steps process.",
     },
     {
       title: "Monitor and Optimize",
@@ -95,8 +98,13 @@ const Services = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    setActiveIndex(activeIndex === index ? null : index);
   };
+
+  const columns = [[], [], []];
+  questions.forEach((item, index) => {
+    columns[index % 3].push({ ...item, originalIndex: index });
+  });
 
   return (
     <article>
@@ -118,7 +126,7 @@ const Services = () => {
       </section>
 
       {/* Manage IT services section */}
-      <section className="flex flex-col lg:flex-row items-center justify-evenly px-6 lg:px-16 py-10">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 px-6 lg:px-16 py-10">
         {/* Left Content */}
         <div className="max-w-[30rem] text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center">
@@ -151,17 +159,17 @@ const Services = () => {
           <img
             src={ITimage}
             alt="Benefits of Managed IT Services"
-            className="w-full max-w-lg"
+            className="w-full max-w-lg hidden sm:block"
+          />
+          <img
+            src={ITimageMobile}
+            alt="Benefits of Managed IT Services"
+            className="w-full max-w-lg sm:hidden"
           />
         </div>
       </section>
 
-      {/* border line */}
-      <div className="flex items-center max-w-[40rem] mx-auto px-5">
-        <div className="flex-grow h-px bg-gray-300"></div>
-        <div className="w-32  sm:w-72 h-2 bg-[#1D51A2] rounded"></div>
-        <div className="flex-grow h-px bg-gray-300"></div>
-      </div>
+      <BorderLine/>
 
       {/* onboarding process */}
       <section className="flex justify-center mx-5">
@@ -171,14 +179,18 @@ const Services = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-6 place-items-center items-stretch">
             {onboardingSteps.map((service, index) => (
-              <div className="bg-[#F4F4F4] shadow-md rounded-tl-4xl rounded-br-4xl p-6  w-full sm:max-w-[19rem] flex flex-col pt-20 px-8 sm:px-12">
-                <h1 className="text-[#F0B138] mb-2 font-semibold">
-                  {service.step}
-                </h1>
-                <h3 className="text-xl font-bold text-[#047BAF] mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 mb-6">{service.description}</p>
+              <div className="group flex flex-col w-full sm:max-w-[19rem] h-full">
+                <div className="bg-[#F4F4F4] shadow-md rounded-tl-4xl rounded-br-4xl p-6 flex flex-col flex-1 pt-20 px-8 sm:px-12 transition-all duration-300 transform group-hover:-translate-y-2 group-hover:bg-[#047BAF]">
+                  <h1 className="text-[#F0B138] mb-2 font-semibold">
+                    {service.step}
+                  </h1>
+                  <h3 className="text-xl font-bold text-[#047BAF] mb-4 group-hover:text-white">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 mb-6 group-hover:text-white">
+                    {service.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -221,23 +233,29 @@ const Services = () => {
       </section>
 
       {/* Questions section */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-x-8 px-5 sm:px-20 pt-12 sm:pt-20 -mb-6 sm:-mb-0">
-        {questions.map((item, index) => (
-          <div key={index} className="border-b pb-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-md font-semibold">{item.title}</h3>
-              <button
-                className="w-8 h-8 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100"
-                onClick={() => toggleAccordion(index)}
-              >
-                <span className="text-gray-500 text-xl font-bold">
-                  {activeIndex === index ? "-" : "+"}
-                </span>
-              </button>
-            </div>
-            {activeIndex === index && (
-              <p className="mt-2 text-sm text-gray-600">{item.description}</p>
-            )}
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-5 sm:px-20 py-12 sm:py-20">
+        {columns.map((column, colIndex) => (
+          <div key={colIndex} className="space-y-6">
+            {column.map((item) => (
+              <div key={item.originalIndex} className="border-b pb-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-md font-semibold">{item.title}</h3>
+                  <button
+                    className="w-8 h-8 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100"
+                    onClick={() => toggleAccordion(item.originalIndex)}
+                  >
+                    <span className="text-gray-500 text-xl font-bold">
+                      {activeIndex === item.originalIndex ? "-" : "+"}
+                    </span>
+                  </button>
+                </div>
+                {activeIndex === item.originalIndex && (
+                  <p className="mt-2 text-sm text-gray-600">
+                    {item.description}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         ))}
       </section>
