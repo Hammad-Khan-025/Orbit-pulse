@@ -5,6 +5,10 @@ import image1 from "../../assets/servicesImages/IT-managed-services/image1.png";
 import image2 from "../../assets/servicesImages/IT-managed-services/image2.png";
 import ITimage from "../../assets/servicesImages/IT-managed-services/IT-service-benefits-img.png";
 import ITimageMobile from "../../assets/servicesImages/IT-managed-services/IT-benefits-mobile-img.png";
+import step1Icon from "../../assets/servicesImages/IT-managed-services/step1-icon.png";
+import step2Icon from "../../assets/servicesImages/IT-managed-services/step2-icon.png";
+import step3Icon from "../../assets/servicesImages/IT-managed-services/step3-icon.png";
+import step4Icon from "../../assets/servicesImages/IT-managed-services/step4-icon.png";
 import BorderLine from "../../components/BorderLine";
 
 const Services = () => {
@@ -14,24 +18,28 @@ const Services = () => {
       title: "Commencement of the Project",
       description:
         "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+      icon: step1Icon,
     },
     {
       step: "Step 2",
       title: "Sharing Knowledge",
       description:
         "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+      icon: step2Icon,
     },
     {
       step: "Step 3",
       title: "Interim Support",
       description:
         "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+      icon: step3Icon,
     },
     {
       step: "Step 4",
       title: "Delivery",
       description:
         "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+      icon: step4Icon,
     },
   ];
 
@@ -169,7 +177,9 @@ const Services = () => {
         </div>
       </section>
 
-      <BorderLine/>
+      <div className="px-5">
+      <BorderLine />
+      </div>
 
       {/* onboarding process */}
       <section className="flex justify-center mx-5">
@@ -180,7 +190,15 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-6 place-items-center items-stretch">
             {onboardingSteps.map((service, index) => (
               <div className="group flex flex-col w-full sm:max-w-[19rem] h-full">
-                <div className="bg-[#F4F4F4] shadow-md rounded-tl-4xl rounded-br-4xl p-6 flex flex-col flex-1 pt-20 px-8 sm:px-12 transition-all duration-300 transform group-hover:-translate-y-2 group-hover:bg-[#047BAF]">
+                <div className="bg-[#F4F4F4] shadow-md rounded-tl-4xl rounded-br-4xl p-6 flex flex-col flex-1 px-8 sm:px-10 transition-all duration-300 transform group-hover:-translate-y-2 group-hover:bg-[#047BAF]">
+                  {/* Icon Image Above Step Number */}
+                  <div className="flex justify-end">
+                    <img
+                      src={service.icon}
+                      alt={`Step ${index + 1} Icon`}
+                      className="w-20 h-20 mb-4 bg-gray-200 rounded-full p-2"
+                    />
+                  </div>
                   <h1 className="text-[#F0B138] mb-2 font-semibold">
                     {service.step}
                   </h1>

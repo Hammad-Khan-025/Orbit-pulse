@@ -15,7 +15,7 @@ const ITEndUserSupport = () => {
     <article>
       {/* Header section */}
       <section className="relative">
-        <img src={mainImage} alt="" className="h-72 sm:h-auto object-cover" />
+        <img src={mainImage} alt="" className="h-72 sm:h-auto object-cover object-right" />
         <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white flex px-5 sm:px-20 xl:px-52 2xl:px-72 3xl:px-96">
           <div>
             <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">

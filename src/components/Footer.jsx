@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#3EA3DE] text-white py-14 px-6 font-malayalam">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 mx-auto max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 mx-auto max-w-5xl">
         {/* Newsletter Section */}
-        <div>
-          <h3 className="mb-4 text-lg  text-center sm:text-start">
+        <div className="flex flex-col justify-center items-center md:items-start">
+          <h3 className="mb-4  text-center sm:text-start">
             Join our newsletter to stay up to date on features and releases.
           </h3>
           <div className="flex items-center flex-wrap gap-4 space-x-2 my-5">
@@ -36,9 +36,6 @@ const Footer = () => {
           <ul className="flex justify-between flex-wrap mt-6 gap-4 md:gap-0 text-sm md:text-base">
             <li>
               <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about-us">About Us</Link>
             </li>
             <li>
               <Link to="/services">Services</Link>
