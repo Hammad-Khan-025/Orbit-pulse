@@ -6,6 +6,7 @@ import feature2Img from "../assets/homeImages/feature2Img.png";
 import feature3Img from "../assets/homeImages/feature3Img.png";
 import mapImg from "../assets/homeImages/mapImg.png";
 import ServiceCard from "../components/ServiceCard";
+import ServiceBanner from "../components/ServicesBanner";
 
 const Home = () => {
   const services = [
@@ -79,20 +80,15 @@ const Home = () => {
 
   return (
     <article>
-      <div className="relative">
-        <img src={mainImage} alt="" className="h-72 sm:h-auto" />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center">
-          <div>
-            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-              EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
-            </h1>
-            <p className="text-xs sm:text-base">
-              We start with understanding your “Problem Statement”.and, Tailor
-              Solutions & Services that “Fit Your Business Needs”.
-            </p>
-          </div>
-        </div>
-      </div>
+
+      {/* Banner section */}
+      <ServiceBanner
+        image={mainImage}
+        title="EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS"
+        description="We start with understanding your “Problem Statement”.and, Tailor
+              Solutions & Services that “Fit Your Business Needs”."
+              fullWidth={true}
+      />
 
       {/* Header Section */}
       <section className="text-center my-14 font-bangla px-3">

@@ -120,7 +120,7 @@ const Header = () => {
 
               {isDropdownOpen && (
                 <div
-                  className="absolute top-10 left-1/2 transform -translate-x-1/2 mt-2 w-auto min-w-[12rem] lg:w-[55rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
+                  className="absolute top-10 left-1/2 transform -translate-x-1/2 mt-2 w-auto min-w-[12rem] lg:w-[60rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >

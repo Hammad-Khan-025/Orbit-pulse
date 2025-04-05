@@ -7,6 +7,7 @@ import bgGroupMobile from "../../assets/servicesImages/IT-infrastructure-service
 import endUser from "../../assets/servicesImages/IT-infrastructure-services/endUserImage.png";
 import platformer from "../../assets/servicesImages/IT-infrastructure-services/platformerImage.png";
 import BorderLine from "../../components/BorderLine";
+import ServiceBanner from "../../components/ServicesBanner";
 
 const ITInfrastructureServices = () => {
   const questions = [
@@ -49,22 +50,15 @@ const ITInfrastructureServices = () => {
 
   return (
     <article>
-      <section className="relative">
-        <img src={mainImage} alt="" className="h-72 sm:h-auto object-cover object-right" />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center max-w-[70rem] sm:ps-20 lg:ps-40 xl:ps-52 2xl:ps-72">
-          <div>
-            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-              IT Infrastructure Services
-            </h1>
-            <p className="text-xs sm:text-base ">
-              Our team of experienced professionals can work with you to plan,
+      {/* Banner section */}
+      <ServiceBanner
+        image={mainImage}
+        title="IT Infrastructure Services"
+        description="Our team of experienced professionals can work with you to plan,
               execute, and monitor your data center movement or migration,
               ensuring minimal disruption to your operations and no loss of
-              data.
-            </p>
-          </div>
-        </div>
-      </section>
+              data."
+      />
 
       <section className="flex flex-col items-center text-center mt-10  bg-white font-kannada px-5">
         <h2 className="text-lg md:text-3xl font-bold text-[#FCB813] uppercase">

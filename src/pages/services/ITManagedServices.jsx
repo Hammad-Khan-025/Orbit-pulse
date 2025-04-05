@@ -10,6 +10,7 @@ import step2Icon from "../../assets/servicesImages/IT-managed-services/step2-ico
 import step3Icon from "../../assets/servicesImages/IT-managed-services/step3-icon.png";
 import step4Icon from "../../assets/servicesImages/IT-managed-services/step4-icon.png";
 import BorderLine from "../../components/BorderLine";
+import ServiceBanner from "../../components/ServicesBanner";
 
 const Services = () => {
   const onboardingSteps = [
@@ -116,22 +117,13 @@ const Services = () => {
 
   return (
     <article>
-      {/* Header section */}
-      <section className="relative">
-        <img src={mainImage} alt="" className="h-72 sm:h-auto object-cover" />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center">
-          <div>
-            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-              IT MANAGED SERVICE
-            </h1>
-            <p className="text-xs sm:text-base">
-              One stop shop for all your IT problems and reliable partner in
-              managing your service requests through 24/7 accessible team of
-              experts.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Banner section */}
+      <ServiceBanner
+        image={mainImage}
+        title="IT MANAGED SERVICE"
+        description="One stop shop for all your IT problems and reliable partner in managing your service requests through 24/7 accessible team of experts."
+        fullWidth={true}
+      />
 
       {/* Manage IT services section */}
       <section className="flex flex-col lg:flex-row items-center justify-center gap-6 px-6 lg:px-16 py-10">
@@ -178,7 +170,7 @@ const Services = () => {
       </section>
 
       <div className="px-5">
-      <BorderLine />
+        <BorderLine />
       </div>
 
       {/* onboarding process */}

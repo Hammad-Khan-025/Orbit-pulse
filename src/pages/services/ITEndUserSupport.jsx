@@ -9,25 +9,21 @@ import icon1 from "../../assets/servicesImages/IT-end-user-support/icon1.png";
 import icon2 from "../../assets/servicesImages/IT-end-user-support/icon2.png";
 import icon3 from "../../assets/servicesImages/IT-end-user-support/icon3.png";
 import BorderLine from "../../components/BorderLine";
+import ServiceBanner from "../../components/ServicesBanner";
 
 const ITEndUserSupport = () => {
   return (
     <article>
-      {/* Header section */}
-      <section className="relative">
-        <img src={mainImage} alt="" className="h-72 sm:h-auto object-cover object-right" />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white flex px-5 sm:px-20 xl:px-52 2xl:px-72 3xl:px-96">
-          <div>
-            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-              End User IT Support
-            </h1>
-            <p className="text-xs sm:text-base">
-              Our first-line support services are tailored to companies like
-              yours.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* px-5 sm:px-20 xl:px-52 2xl:px-72 3xl:px-96 */}
+
+      {/* Banner section */}
+      <ServiceBanner
+        image={mainImage}
+        title="End User IT Support"
+        description="Our first-line support services are tailored to companies like
+              yours."
+        fullWidth={true}
+      />
 
       {/* SERVICES THAT MEET ALL YOUR NEEDS */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
@@ -62,7 +58,9 @@ const ITEndUserSupport = () => {
         </div>
       </section>
 
-      <BorderLine />
+      <div className="px-5">
+        <BorderLine />
+      </div>
 
       {/* -------------------Step1----------------- */}
       <section className="max-w-5xl mx-auto p-6">
@@ -152,7 +150,7 @@ const ITEndUserSupport = () => {
         </div>
       </section>
 
-      <div className="sm:hidden">
+      <div className="sm:hidden px-5">
         <BorderLine />
       </div>
 
@@ -242,7 +240,7 @@ const ITEndUserSupport = () => {
         <hr className="  border border-gray-300 " />
       </div>
 
-      <div className="sm:hidden">
+      <div className="sm:hidden px-5">
         <BorderLine />
       </div>
 
@@ -312,38 +310,39 @@ const ITEndUserSupport = () => {
         <hr className="  border border-gray-300 " />
       </div>
 
-      <div className="sm:hidden">
+      <div className="sm:hidden px-5">
         <BorderLine />
       </div>
 
       {/* End user support */}
       <section className="flex flex-col sm:flex-row gap-8 justify-center sm:justify-between items-center bg-white p-6 max-w-5xl mx-auto mb-10">
-      <h2 className="text-lg sm:text-2xl font-bold text-[#1D51A2]">End User Support</h2>
-      
-      {/* Image shown in mobile mode only */}
-      <div className="p-5 bg-gray-200 flex items-center justify-center rounded-full shrink-0 sm:hidden">
-        <img src={icon3} alt="User IT Support" className="w-32 h-32" />
-      </div>
-      
-      <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-52 sm:w-auto">
-        <ul className="list-disc pl-5">
-          <li>1st line support</li>
-          <li>Problem resolution</li>
-          <li>Incident Management</li>
-        </ul>
-        <ul className="list-disc pl-5">
-          <li>Third Party Escalation</li>
-          <li>Service Request Fulfillment</li>
-          <li>User Device Support</li>
-        </ul>
-      </div>
-      
-      {/* Image hidden in mobile, shown in larger screens */}
-      <div className="p-5 bg-gray-200 flex items-center justify-center rounded-full shrink-0 hidden sm:flex">
-        <img src={icon3} alt="User IT Support" className="w-32 h-32" />
-      </div>
-    </section>
+        <h2 className="text-lg sm:text-2xl font-bold text-[#1D51A2]">
+          End User Support
+        </h2>
 
+        {/* Image shown in mobile mode only */}
+        <div className="p-5 bg-gray-200 flex items-center justify-center rounded-full shrink-0 sm:hidden">
+          <img src={icon3} alt="User IT Support" className="w-32 h-32" />
+        </div>
+
+        <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-52 sm:w-auto">
+          <ul className="list-disc pl-5">
+            <li>1st line support</li>
+            <li>Problem resolution</li>
+            <li>Incident Management</li>
+          </ul>
+          <ul className="list-disc pl-5">
+            <li>Third Party Escalation</li>
+            <li>Service Request Fulfillment</li>
+            <li>User Device Support</li>
+          </ul>
+        </div>
+
+        {/* Image hidden in mobile, shown in larger screens */}
+        <div className="p-5 bg-gray-200 flex items-center justify-center rounded-full shrink-0 hidden sm:flex">
+          <img src={icon3} alt="User IT Support" className="w-32 h-32" />
+        </div>
+      </section>
     </article>
   );
 };

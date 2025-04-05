@@ -6,28 +6,18 @@ import WirelessConnect from "../../assets/servicesImages/Wireless-survey/wireles
 import authorizedImage from "../../assets/servicesImages/Wireless-survey/authorizedImage.png";
 import bgGroup from "../../assets/servicesImages/IT-infrastructure-services/bgGroup.png";
 import BorderLine from "../../components/BorderLine";
+import ServiceBanner from "../../components/ServicesBanner";
 
 const WirelessSurvey = () => {
   return (
     <article>
-      <section className="relative ">
-        <img
-          src={mainImage}
-          alt=""
-          className="h-72 sm:h-auto object-cover object-right"
-        />
-        <div className="bg-[#1D51A2B2] absolute bottom-4 sm:bottom-12 left-0 w-full text-white py-5 sm:py-8 shadow shadow-white px-5 flex justify-center max-w-[70rem]">
-          <div>
-            <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
-              Wireless Survey as a Service
-            </h1>
-            <p className="text-xs sm:text-base ">
-              IP Global & Ekahau: Sculpting Perfect Wireless Landscapes for
-              Your Business.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Banner section */}
+      <ServiceBanner
+        image={mainImage}
+        title="Wireless Survey as a Service"
+        description="IP Global & Ekahau: Sculpting Perfect Wireless Landscapes for
+              Your Business."
+      />
 
       {/* SERVICES THAT MEET ALL YOUR NEEDS */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
@@ -75,7 +65,7 @@ const WirelessSurvey = () => {
       </section>
 
       <div className="px-5">
-      <BorderLine />
+        <BorderLine />
       </div>
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
@@ -174,8 +164,8 @@ const WirelessSurvey = () => {
       </section>
 
       <div className="sm:hidden mt-10 px-5">
-                <BorderLine />
-              </div>
+        <BorderLine />
+      </div>
 
       <section className="flex flex-col items-center justify-center my-10 sm:my-14 mx-5">
         <div className="max-w-5xl w-full">
@@ -275,8 +265,6 @@ const WirelessSurvey = () => {
           </div>
         </div>
       </section>
-
-
     </article>
   );
 };
