@@ -22,7 +22,6 @@ const ITEndUserSupport = () => {
         title="End User IT Support"
         description="Our first-line support services are tailored to companies like
               yours."
-        fullWidth={true}
       />
 
       {/* SERVICES THAT MEET ALL YOUR NEEDS */}
@@ -58,7 +57,7 @@ const ITEndUserSupport = () => {
         </div>
       </section>
 
-      <div className="px-5">
+      <div className="px-5 max-w-4xl mx-auto">
         <BorderLine />
       </div>
 

@@ -64,7 +64,7 @@ const WirelessSurvey = () => {
         </div>
       </section>
 
-      <div className="px-5">
+      <div className="px-5 max-w-4xl mx-auto">
         <BorderLine />
       </div>
 
@@ -102,7 +102,7 @@ const WirelessSurvey = () => {
           variety of clients across different industries.
         </p>
 
-        <div className="  w-full max-w-5xl">
+        <div className="  w-full max-w-4xl">
           <img src={WirelessConnect} alt="" />
         </div>
       </section>

@@ -80,27 +80,26 @@ const Home = () => {
 
   return (
     <article>
-
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
         title="EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS"
         description="We start with understanding your “Problem Statement”.and, Tailor
               Solutions & Services that “Fit Your Business Needs”."
-              fullWidth={true}
+        fullWidth={true}
       />
 
       {/* Header Section */}
-      <section className="text-center my-14 font-bangla px-3">
+      <section className="text-center my-14 font-bangla px-3  max-w-6xl mx-auto">
         <h1 className="text-2xl sm:text-4xl font-bold text-[#FCB813] ">
           EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS
         </h1>
-        <div className="max-w-5xl mx-auto">
+        <div className="">
           <p className="text-lg sm:text-2xl text-[#00BDFF] mt-4">
             AS YOUR BUSINESS EVOLVES, OUR IT SOLUTIONS SEAMLESSLY ADAPT, LETTING
             YOU CONCENTRATE ON INNOVATION.
           </p>
-          <p className="mt-6 text-gray-700 text-base md:text-lg max-w-4xl mx-auto">
+          <p className="mt-6 text-gray-700 text-base md:text-lg">
             While "<b>You</b>" harness creativity to enhance your enterprise, "
             <b>We</b>" accelerate your time to market, amplify organizational
             performance, and ensure you stay competitive. Our extensive global
@@ -114,7 +113,7 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="px-3">
+      <section className="px-3 max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8">
           SUPPORTING YOUR JOURNEY
         </h2>
@@ -170,12 +169,12 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex justify-center pt-8">
+        <div className="flex justify-center pt-8 max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-5">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group flex flex-col items-center text-center w-full sm:w-96"
+                className="group flex flex-col items-center text-center w-full"
               >
                 <div className="bg-[#F5F5F5] w-full flex justify-center items-center h-40 py-32 group-hover:bg-[#00BDFF] group-hover:rotate-y-180 transform transition duration-500 perspective-1000">
                   <img

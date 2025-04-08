@@ -47,8 +47,7 @@ const Services = () => {
   const questions = [
     {
       title: "Easy Setup",
-      description:
-        "Get started quickly with a simple 4 steps process.",
+      description: "Get started quickly with a simple 4 steps process.",
     },
     {
       title: "Monitor and Optimize",
@@ -122,13 +121,12 @@ const Services = () => {
         image={mainImage}
         title="IT MANAGED SERVICE"
         description="One stop shop for all your IT problems and reliable partner in managing your service requests through 24/7 accessible team of experts."
-        fullWidth={true}
       />
 
       {/* Manage IT services section */}
-      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 px-6 lg:px-16 py-10">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 px-6 lg:px-16 py-10 max-w-[90rem] mx-auto">
         {/* Left Content */}
-        <div className="max-w-[30rem] text-center lg:text-left">
+        <div className=" text-center lg:text-left max-w-[45rem]">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center">
             BENEFITS OF MANAGED <br /> IT SERVICES
           </h2>
@@ -155,7 +153,7 @@ const Services = () => {
         </div>
 
         {/* Right Content - Placeholder for Image */}
-        <div className="mt-8 lg:mt-0 lg:ml-8">
+        <div className="mt-8 lg:mt-0 lg:ml-8 max-w-[45rem]">
           <img
             src={ITimage}
             alt="Benefits of Managed IT Services"
@@ -169,7 +167,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="px-5">
+      <div className="px-5 max-w-4xl mx-auto">
         <BorderLine />
       </div>
 
@@ -214,36 +212,38 @@ const Services = () => {
         </h2>
         <img src={image1} alt="" className="h-auto w-full sm:hidden" />
         <img src={image2} alt="" className="h-auto w-full sm:hidden" />
-        <img
-          src={keyOfferingImage}
-          alt=""
-          className="h-72 sm:h-auto object-cover hidden sm:block"
-        />
-        <div className="bg-[#1D51A2B2] absolute bottom-16 sm:bottom-10 left-0 w-full text-white py-14 shadow shadow-white px-5 flex flex-col sm:flex-row justify-center gap-5 sm:gap-16 text-sm">
-          {/* Left List */}
-          <ul className="space-y-5 sm:space-y-4">
-            {servicesLeft.map((service, index) => (
-              <li key={index} className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>{service}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="bg-[#1D51A2CC]">
+          <img
+            src={keyOfferingImage}
+            alt=""
+            className="h-72 sm:h-auto object-cover hidden sm:block max-w-7xl mx-auto"
+          />
+          <div className="bg-[#1D51A2CC] absolute bottom-16 sm:bottom-0 left-0 w-full text-white py-14 sm:py-8  px-5 flex flex-col sm:flex-row justify-center gap-5 sm:gap-16 text-sm">
+            {/* Left List */}
+            <ul className="space-y-5 sm:space-y-4">
+              {servicesLeft.map((service, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{service}</span>
+                </li>
+              ))}
+            </ul>
 
-          {/* Right List */}
-          <ul className="space-y-2 sm:space-y-4">
-            {servicesRight.map((service, index) => (
-              <li key={index} className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>{service}</span>
-              </li>
-            ))}
-          </ul>
+            {/* Right List */}
+            <ul className="space-y-2 sm:space-y-4">
+              {servicesRight.map((service, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{service}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Questions section */}
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-5 sm:px-20 py-12 sm:py-20">
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-5 sm:px-20 py-12 sm:py-20 max-w-[90rem] mx-auto">
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="space-y-6">
             {column.map((item) => (

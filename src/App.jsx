@@ -8,6 +8,7 @@ import ITEndUserSupport from './pages/services/ITEndUserSupport';
 import ITInfrastructureServices from './pages/services/ITInfrastructureServices';
 import WirelessSurvey from './pages/services/WirelessSurvey';
 import ITOutsourcing from './pages/services/ITOutsourcing';
+import SecurityServices from './pages/services/SecurityServices';
 // import AboutUs from './pages/AboutUs';
 // import ContactUs from './pages/ContactUs';
 
@@ -21,7 +22,8 @@ function App() {
         <Route path="/services/IT-end-user-support" element={<ITEndUserSupport />} />
         <Route path="/services/IT-infrastructure-management" element={<ITInfrastructureServices />} /> 
         <Route path="/services/wireless-survey" element={<WirelessSurvey />} />
-        <Route path="/services/IT-outsourcing" element={<ITOutsourcing />} />
+        <Route path="/services/IT-outsourcing" element={<ITOutsourcing />} /> 
+        <Route path="/services/managed-security" element={<SecurityServices />} />
         {/* <Route path="/contact-us" element={<ContactUs />} /> */}
       </Routes>
       <Footer />

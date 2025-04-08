@@ -120,17 +120,17 @@ const Header = () => {
 
               {isDropdownOpen && (
                 <div
-                  className="absolute top-10 left-1/2 transform -translate-x-1/2 mt-2 w-auto min-w-[12rem] lg:w-[60rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
+                  className="absolute top-10 -left-32 mt-2 w-auto min-w-[12rem] lg:w-[53rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
                     {menu.map((section) => (
                       <div key={section.category}>
-                        <h4 className="font-bold text-[#1D51A2] mb-2">
+                        <h4 className="font-bold text-[#1D51A2] mb-5 text-lg">
                           {section.category}
                         </h4>
-                        <ul className="space-y-2 text-gray-600">
+                        <ul className="space-y-5 text-gray-600">
                           {section.services.map(({ name, path }) => (
                             <li key={name}>
                               <NavLink
@@ -175,7 +175,7 @@ const Header = () => {
 
       {isMobileMenuOpen && (
         <div className="absolute top-40 left-0 w-full bg-white shadow-md lg:hidden p-5 z-50">
-          <ul className="flex flex-col gap-2 text-[#8D8D8D]">
+          <ul className="flex flex-col gap-4 text-[#8D8D8D]">
             <li>
               <NavLink
                 to="/"
@@ -200,7 +200,7 @@ const Header = () => {
               {isMobileServicesOpen && (
                 <ul className="pl-4 text-gray-600">
                   {menu.map((section) => (
-                    <li key={section.category} className="mt-2">
+                    <li key={section.category} className="mt-4">
                       <span
                         className="flex justify-between cursor-pointer font-bold text-[#1D51A2]"
                         onClick={() =>
@@ -225,7 +225,7 @@ const Header = () => {
                               <NavLink
                                 to={path}
                                 className={({ isActive }) =>
-                                  `block py-1 px-3 rounded-md text-sm ${
+                                  `block py-2 px-3 rounded-md text-sm ${
                                     isActive
                                       ? "bg-[#1D51A2] text-white"
                                       : "hover:text-[#1D51A2]"

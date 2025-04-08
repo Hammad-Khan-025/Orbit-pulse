@@ -107,7 +107,9 @@ const ITInfrastructureServices = () => {
         </div>
       </section>
 
-      <BorderLine />
+      <div className="max-w-3xl mx-auto">
+        <BorderLine />
+      </div>
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">

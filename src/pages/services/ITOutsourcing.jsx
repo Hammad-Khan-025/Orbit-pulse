@@ -80,7 +80,7 @@ const ITOutsourcing = () => {
     "Direct communication with developers",
     "High developer commitment",
   ];
-  
+
   const contractTypes = [
     {
       name: "Time and Materials",
@@ -107,7 +107,6 @@ const ITOutsourcing = () => {
         title="IT Outsourcing"
         description="Providing Subject Matter Experts and large support teams to effectively deliver your 
             d2d business processes."
-        fullWidth={false}
       />
 
       <section className="max-w-5xl mx-auto px-6 lg:ps-20 pt-10 sm:pt-14">
@@ -126,11 +125,15 @@ const ITOutsourcing = () => {
           difference between the in-house global team and the outsourcing
           vendor’s team.
         </p>
-        <img src={clockImage} alt="" className="w-[45rem] mx-auto pt-5" />
+        <img
+          src={clockImage}
+          alt=""
+          className="w-[45rem] mx-auto pt-5 rotate-on-hover"
+        />
       </section>
 
-      <div className="mt-8 px-5">
-      <BorderLine />
+      <div className="mt-8 px-5 max-w-4xl mx-auto">
+        <BorderLine />
       </div>
 
       <section className="py-12 pt-5 px-4 text-center">
@@ -144,21 +147,27 @@ const ITOutsourcing = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 max-w-5xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-[#F4F4F4] p-6 rounded-tl-4xl rounded-br-4xl hover:shadow-lg hover:scale-105 transition duration-300 flex flex-col items-center justify-center sm:justify-start h-full"
-            >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="h-24 w-24 object-contain"
-              />
-              <p className="mt-4 text-gray-800 font-medium text-center">
-                {service.title}
-              </p>
-            </div>
-          ))}
+          {services.map((service, index) => {
+            const isHighlighted = index % 2 === 0; // index 0, 2, 4 → cards 1, 3, 5
+
+            return (
+              <div
+                key={index}
+                className={`${
+                  isHighlighted ? "bg-[#3EA3DE4D]" : "bg-[#F4F4F4]"
+                } p-6 rounded-tl-4xl rounded-br-4xl hover:shadow-lg hover:scale-105 transition duration-300 flex flex-col items-center justify-center sm:justify-start h-full`}
+              >
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="h-24 w-24 object-contain"
+                />
+                <p className="mt-4 text-gray-800 font-medium text-center">
+                  {service.title}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -185,7 +194,7 @@ const ITOutsourcing = () => {
                 <img
                   src={model.image}
                   alt={model.title}
-                  className="w-32 h-32 bg-[#D9D9D9] rounded-full p-3 transition-transform duration-500 group-hover:rotate-y-180"
+                  className="w-32 h-32 bg-[#D9D9D9] rounded-full p-3 transition-transform duration-500 group-hover:scale-115"
                 />
               </div>
               <div className="border-l border-[#8D8D8D] flex h-full">
@@ -201,100 +210,99 @@ const ITOutsourcing = () => {
         </div>
       </section>
 
-      <div className="overflow-auto p-4 max-w-7xl mx-auto">
-      <table className="min-w-7xl sm:min-w-[850px] w-full border-separate border-spacing-5 table-fixed">
-        <colgroup>
-          <col className="w-[32%]" />
-          <col className="w-[17%]" />
-          <col className="w-[17%]" />
-          <col className="w-[17%]" />
-          <col className="w-[17%]" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th className="bg-[#F9B000] text-black text-center font-semibold px-4 py-4 rounded-tl-xl">
-              Contract Type
-            </th>
-            {contractTypes.map((type, idx) => (
-              <th
-                key={idx}
-                className="bg-[#F9B000] text-black font-semibold px-4 py-4 text-center"
-              >
-                {type.name}
+      <div className="pt-5 max-w-7xl mx-auto overflow-x-auto">
+        <table className="w-full min-w-[750px] border-separate border-spacing-5 table-fixed text-sm">
+          <colgroup>
+            <col className="w-[32%]" />
+            <col className="w-[17%]" />
+            <col className="w-[17%]" />
+            <col className="w-[17%]" />
+            <col className="w-[17%]" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th className="bg-[#F9B000] text-black text-center font-semibold px-4 py-4 rounded-tl-xl">
+                Contract Type
               </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {features.map((feature, i) => (
-            <tr key={i}>
-              <td className="bg-[#E5E5E5] px-4 py-2 font-medium text-gray-800">
-                {feature}
-              </td>
-              {contractTypes.map((type, j) => {
-                const isChecked = type.values[i];
-                return (
-                  <td
-                    key={j}
-                    className={`${
-                      isChecked ? "bg-[#3EA3DE]" : "bg-[#FCB813]"
-                    } text-center px-4 py-2 text-white text-2xl font-bold`}
-                  >
-                    {isChecked ? "✔" : "✕"}
-                  </td>
-                );
-              })}
+              {contractTypes.map((type, idx) => (
+                <th
+                  key={idx}
+                  className="bg-[#F9B000] text-black font-semibold px-4 py-4 text-center"
+                >
+                  {type.name}
+                </th>
+              ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {features.map((feature, i) => (
+              <tr key={i}>
+                <td className="bg-[#E5E5E5] px-4 py-2 font-medium text-gray-800 hover:scale-105 transition-transform duration-300">
+                  {feature}
+                </td>
+                {contractTypes.map((type, j) => {
+                  const isChecked = type.values[i];
+                  return (
+                    <td
+                      key={j}
+                      className={`${
+                        isChecked ? "bg-[#3EA3DE]" : "bg-[#FCB813]"
+                      } text-center px-4 py-2 text-white text-lg sm:text-2xl font-bold hover:scale-105 transition-transform duration-300`}
+                    >
+                      {isChecked ? "✔" : "✕"}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-          {/* border line */}
-          <div className="max-w-5xl mx-auto mt-14 hidden sm:block">
+      {/* border line */}
+      <div className="max-w-5xl mx-auto mt-14 hidden sm:block">
         <hr className="  border border-gray-300 " />
       </div>
 
-    <section className="max-w-7xl mx-auto px-4 py-12 sm:pb-20">
-      <h2 className="text-center text-2xl sm:text-3xl font-semibold text-[#047BAF] mb-10">
-        Our Global Talent Pool
-      </h2>
+      <section className="max-w-7xl mx-auto px-4 py-12 sm:pb-20">
+        <h2 className="text-center text-2xl sm:text-3xl font-semibold text-[#047BAF] mb-10">
+          Our Global Talent Pool
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-        {/* Left Text Content */}
-        <div className="text-gray-700 text-sm leading-7">
-          <p>
-            Global talent pool provides an opportunity to reach out to experts
-            that may be missing or not available locally. Find bilingual
-            specialists in our talent pool. Working with IP Global eliminates
-            the time-consuming recruitment, interviewing, selection and training
-            of new internal employees.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+          {/* Left Text Content */}
+          <div className="text-gray-700 text-sm leading-7">
+            <p>
+              Global talent pool provides an opportunity to reach out to experts
+              that may be missing or not available locally. Find bilingual
+              specialists in our talent pool. Working with IP Global eliminates
+              the time-consuming recruitment, interviewing, selection and
+              training of new internal employees.
+            </p>
+          </div>
+
+          {/* Center Image */}
+          <div className="flex justify-center">
+            <img
+              src={talentPool}
+              alt="Global Talent Pool Illustration"
+              className="w-[250px] sm:w-[300px]"
+            />
+          </div>
+
+          {/* Right Info Card */}
+          <div className="bg-[#3EA3DE] text-white rounded-tl-3xl rounded-br-3xl px-6 py-6 text-sm leading-7">
+            <h3 className="font-semibold mb-4">What We Offer</h3>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Reduced Expenses</li>
+              <li>Access to Global Talent Pool</li>
+              <li>Significant Time Savings</li>
+              <li>Ability to Upscale Fast</li>
+              <li>Uninterrupted Workflow</li>
+            </ul>
+          </div>
         </div>
-
-        {/* Center Image */}
-        <div className="flex justify-center">
-          <img
-            src={talentPool}
-            alt="Global Talent Pool Illustration"
-            className="w-[250px] sm:w-[300px]"
-          />
-        </div>
-
-        {/* Right Info Card */}
-        <div className="bg-[#3EA3DE] text-white rounded-tl-3xl rounded-br-3xl px-6 py-6 text-sm leading-7">
-          <h3 className="font-semibold mb-4">What We Offer</h3>
-          <ul className="list-disc list-inside space-y-2">
-            <li>Reduced Expenses</li>
-            <li>Access to Global Talent Pool</li>
-            <li>Significant Time Savings</li>
-            <li>Ability to Upscale Fast</li>
-            <li>Uninterrupted Workflow</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+      </section>
     </article>
   );
 };
