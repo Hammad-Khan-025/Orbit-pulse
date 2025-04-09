@@ -150,7 +150,7 @@ useEffect(() => {
   src={clockImage}
   alt="Clock"
   className={`w-[45rem] mx-auto pt-5 transition-all duration-700 ease-out 
-    ${clockInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-80"}`}
+    ${clockInView ? "sm:opacity-100 sm:translate-x-0" : "sm:opacity-0 sm:translate-x-80"}`}
 />
 
       </section>
