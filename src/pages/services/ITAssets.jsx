@@ -112,13 +112,13 @@ Secure. Sustainable. Simplified"
         <BorderLine />
       </div>
 
-      <section className="flex flex-col items-center my-16 px-4 max-w-7xl mx-auto">
+      <section className="flex flex-col items-center my-16 max-w-7xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] sm:mb-10 uppercase tracking-widest">
           Our ITAD Services
         </h2>
 
         {/* First Row - 3 Cards */}
-        <div className="flex flex-wrap justify-center gap-8 pt-10">
+        <div className="flex flex-wrap justify-center gap-8 pt-10 px-4">
           {itadServices.slice(0, 3).map((service, index) => (
             <div
               key={index}
@@ -130,7 +130,7 @@ Secure. Sustainable. Simplified"
                 alt="Icon"
                 className="w-32 mb-4 bg-[#D9D9D9] rounded-full p-4"
               />
-              <div className="px-20">
+              <div className="px-16 sm:px-20">
                 <h3 className="font-semibold text-[#5D5A5A] my-5">
                   {service.title}
                 </h3>
@@ -145,7 +145,7 @@ Secure. Sustainable. Simplified"
         </div>
 
         {/* Second Row - 2 Cards */}
-        <div className="flex justify-center gap-8 mt-10 flex-wrap">
+        <div className="flex justify-center gap-8 mt-10 flex-wrap px-4">
           {itadServices.slice(3).map((service, index) => (
             <div
               key={index + 3}
@@ -157,7 +157,7 @@ Secure. Sustainable. Simplified"
                 alt="Icon"
                 className="w-32 mb-4 bg-[#D9D9D9] rounded-full p-4"
               />
-              <div className="px-20">
+              <div className="px-16 sm:px-20">
                 <h3 className="font-semibold text-[#5D5A5A] my-5">
                   {service.title}
                 </h3>
