@@ -27,7 +27,7 @@ const Header = () => {
         },
         {
           name: "IT Asset Disposition Services",
-          path: "/services/it-asset-disposition",
+          path: "/services/IT-assets-disposition",
         },
         { name: "Flexible On-Support", path: "/services/flexible-on-support" },
       ],

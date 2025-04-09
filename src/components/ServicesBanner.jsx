@@ -11,7 +11,7 @@ const ServiceBanner = ({ image, title, description }) => {
           <h1 className="text-xl sm:text-[44px] font-semibold mb-3 font-bangla">
             {title}
           </h1>
-          <p className="text-xs sm:text-base">{description}</p>
+          <p className="text-xs sm:text-base text-start">{description}</p>
         </div>
       </div>
     </section>

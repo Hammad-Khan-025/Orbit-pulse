@@ -70,7 +70,7 @@ const ITEndUserSupport = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-14">
           {/* Left Column */}
           <div>
-            <h2 className="text-2xl font-bold text-[#1D51A2] mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D51A2] mb-4">
               Managed Service Desk
             </h2>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3">
@@ -162,7 +162,7 @@ const ITEndUserSupport = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-14 items-start">
           {/* Left Column */}
           <div>
-            <h2 className="text-2xl font-bold text-[#1D51A2] mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D51A2] mb-4">
               Supported Service Desk
             </h2>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3">

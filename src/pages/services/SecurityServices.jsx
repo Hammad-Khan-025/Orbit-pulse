@@ -171,28 +171,30 @@ const SecurityServices = () => {
 
         {/* Service Cards */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 my-10 sm:my-20">
-          {networkSecurityData.map((service, index) => (
-            <div
-              key={index}
-              className={`w-80 sm:w-96 h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-8 sm:p-16 shrink-0`}
-            >
-              {/* Image Icon */}
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-24 sm:w-32 h-24 sm:h-32 mb-3"
-              />
+  {networkSecurityData.map((service, index) => (
+    <div key={index} className="group">
+      <div
+        className={`w-80 sm:w-96 h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-8 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
+      >
+        {/* Image Icon */}
+        <img
+          src={service.image}
+          alt={service.title}
+          className="w-24 sm:w-32 h-24 sm:h-32 mb-3"
+        />
 
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-[#434242] mb-2">
-                {service.title}
-              </h3>
+        {/* Title */}
+        <h3 className="text-lg font-semibold text-[#434242] mb-2">
+          {service.title}
+        </h3>
 
-              {/* Description */}
-              <p className="text-sm text-[#5E5E5E]">{service.description}</p>
-            </div>
-          ))}
-        </div>
+        {/* Description */}
+        <p className="text-sm text-[#5E5E5E]">{service.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </article>
   );

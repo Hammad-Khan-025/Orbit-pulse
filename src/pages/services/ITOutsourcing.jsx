@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import mainImage from "../../assets/servicesImages/IT-outsourcing/mainImage.png";
 import clockImage from "../../assets/servicesImages/IT-outsourcing/clockImage.png";
 import icon1 from "../../assets/servicesImages/IT-outsourcing/icon1.png";
@@ -16,6 +16,26 @@ import ServiceBanner from "../../components/ServicesBanner";
 import BorderLine from "../../components/BorderLine";
 
 const ITOutsourcing = () => {
+
+  const clockImageRef = useRef(null);
+const [clockInView, setClockInView] = useState(false);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setClockInView(entry.isIntersecting);
+    },
+    { threshold: 0.4 }
+  );
+
+  const current = clockImageRef.current;
+  if (current) observer.observe(current);
+
+  return () => {
+    if (current) observer.unobserve(current);
+  };
+}, []);
+ 
   const services = [
     {
       img: icon1,
@@ -126,10 +146,13 @@ const ITOutsourcing = () => {
           vendor’s team.
         </p>
         <img
-          src={clockImage}
-          alt=""
-          className="w-[45rem] mx-auto pt-5 rotate-on-hover"
-        />
+  ref={clockImageRef}
+  src={clockImage}
+  alt="Clock"
+  className={`w-[45rem] mx-auto pt-5 transition-all duration-700 ease-out 
+    ${clockInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-80"}`}
+/>
+
       </section>
 
       <div className="mt-8 px-5 max-w-4xl mx-auto">
@@ -211,7 +234,7 @@ const ITOutsourcing = () => {
       </section>
 
       <div className="pt-5 max-w-7xl mx-auto overflow-x-auto">
-        <table className="w-full min-w-[750px] border-separate border-spacing-5 table-fixed text-sm">
+        <table className="w-full min-w-[750px] border-separate border-spacing-3 sm:border-spacing-5 table-fixed text-sm">
           <colgroup>
             <col className="w-[32%]" />
             <col className="w-[17%]" />
