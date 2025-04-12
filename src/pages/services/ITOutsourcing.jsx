@@ -16,26 +16,25 @@ import ServiceBanner from "../../components/ServicesBanner";
 import BorderLine from "../../components/BorderLine";
 
 const ITOutsourcing = () => {
-
   const clockImageRef = useRef(null);
-const [clockInView, setClockInView] = useState(false);
+  const [clockInView, setClockInView] = useState(false);
 
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      setClockInView(entry.isIntersecting);
-    },
-    { threshold: 0.4 }
-  );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setClockInView(entry.isIntersecting);
+      },
+      { threshold: 0.4 }
+    );
 
-  const current = clockImageRef.current;
-  if (current) observer.observe(current);
+    const current = clockImageRef.current;
+    if (current) observer.observe(current);
 
-  return () => {
-    if (current) observer.unobserve(current);
-  };
-}, []);
- 
+    return () => {
+      if (current) observer.unobserve(current);
+    };
+  }, []);
+
   const services = [
     {
       img: icon1,
@@ -125,34 +124,36 @@ useEffect(() => {
       <ServiceBanner
         image={mainImage}
         title="IT Outsourcing"
-        description="Providing Subject Matter Experts and large support teams to effectively deliver your 
-            d2d business processes."
+        description="Offering specialized experts and dedicated support teams to efficiently manage and enhance your day-to-day business operations."
       />
 
       <section className="max-w-5xl mx-auto px-6 lg:ps-20 pt-10 sm:pt-14">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] font-kannada text-center mb-6 sm:mb-10">
-          ROUND THE CLOCK IT OUTSOURCING
+          24/7 IT Outsourcing
         </h1>
         <p className="text-[#5E5E5E]">
-          Whether it is Nearshoring, offshoring or onshoring all types of
-          outsourcing have one thing in common, they involve hiring a third
-          party outside of a company to handle certain business activities.
+          No matter if it’s nearshoring, offshoring, or onshoring, all
+          outsourcing models share a common goal: bringing in a third-party
+          service provider to manage specific business functions.
           <br /> <br />
-          At IP GLOBAL we provide round the clock IT outsourcing service to
-          businesses.
+          At Orbit Pulse, we offer 24/7 IT outsourcing services to ensure your
+          business operates smoothly at all times.
           <br /> <br />
-          Your business will function round the clock thanks to the time
-          difference between the in-house global team and the outsourcing
-          vendor’s team.
+          With the time zone differences between your in-house team and our
+          outsourcing partners, your operations can continue seamlessly around
+          the clock.
         </p>
         <img
-  ref={clockImageRef}
-  src={clockImage}
-  alt="Clock"
-  className={`w-[45rem] mx-auto pt-5 transition-all duration-700 ease-out 
-    ${clockInView ? "sm:opacity-100 sm:translate-x-0" : "sm:opacity-0 sm:translate-x-80"}`}
-/>
-
+          ref={clockImageRef}
+          src={clockImage}
+          alt="Clock"
+          className={`w-[45rem] mx-auto pt-5 transition-all duration-700 ease-out 
+    ${
+      clockInView
+        ? "sm:opacity-100 sm:translate-x-0"
+        : "sm:opacity-0 sm:translate-x-80"
+    }`}
+        />
       </section>
 
       <div className="mt-8 px-5 max-w-4xl mx-auto">
@@ -161,12 +162,13 @@ useEffect(() => {
 
       <section className="py-12 pt-5 px-4 text-center">
         <h2 className="text-xl md:text-3xl font-semibold text-[#047BAF] mb-5">
-          IT Outsourcing Services That We Offer
+          Our IT Outsourcing Services
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-          IT outsourcing is beneficial to you as an organization because you get
-          access to high quality services at better prices. Furthermore, you
-          also have access to better skills.
+          IT outsourcing offers significant advantages for your organization,
+          providing access to high-quality services at competitive rates. In
+          addition, it allows you to tap into specialized expertise and skills
+          that might not be readily available in-house.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 max-w-5xl mx-auto">
@@ -203,104 +205,20 @@ useEffect(() => {
         <BorderLine />
       </div>
 
-      <section className="py-6 sm:py-10 px-4 max-w-7xl mx-auto">
-        <h2 className="text-xl sm:text-3xl font-semibold text-center mb-10 text-[#047BAF]">
-          IT Outsourcing Models
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {outsourcingModels.map((model, index) => (
-            <div
-              key={index}
-              className="group flex flex-col h-full  border-[#8D8D8D] rounded-tl-2xl transition-transform duration-300 hover:-translate-y-2"
-            >
-              <div className="flex justify-center items-center py-10 border border-b-0 border-[#8D8D8D] rounded-tl-3xl">
-                <img
-                  src={model.image}
-                  alt={model.title}
-                  className="w-32 h-32 bg-[#D9D9D9] rounded-full p-3 transition-transform duration-500 group-hover:scale-115"
-                />
-              </div>
-              <div className="border-l border-[#8D8D8D] flex h-full">
-                <div className="flex-grow flex flex-col bg-[#3EA3DE]  text-white p-6 sm:p-8 rounded-tl-3xl rounded-br-3xl">
-                  <h3 className="text-lg font-bold mb-2">{model.title}</h3>
-                  <p className="text-sm leading-7 mt-auto">
-                    {model.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="pt-5 max-w-7xl mx-auto overflow-x-auto">
-        <table className="w-full min-w-[750px] border-separate border-spacing-3 sm:border-spacing-5 table-fixed text-sm">
-          <colgroup>
-            <col className="w-[32%]" />
-            <col className="w-[17%]" />
-            <col className="w-[17%]" />
-            <col className="w-[17%]" />
-            <col className="w-[17%]" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th className="bg-[#F9B000] text-black text-center font-semibold px-4 py-4 rounded-tl-xl">
-                Contract Type
-              </th>
-              {contractTypes.map((type, idx) => (
-                <th
-                  key={idx}
-                  className="bg-[#F9B000] text-black font-semibold px-4 py-4 text-center"
-                >
-                  {type.name}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {features.map((feature, i) => (
-              <tr key={i}>
-                <td className="bg-[#E5E5E5] px-4 py-2 font-medium text-gray-800 hover:scale-105 transition-transform duration-300">
-                  {feature}
-                </td>
-                {contractTypes.map((type, j) => {
-                  const isChecked = type.values[i];
-                  return (
-                    <td
-                      key={j}
-                      className={`${
-                        isChecked ? "bg-[#3EA3DE]" : "bg-[#FCB813]"
-                      } text-center px-4 py-2 text-white text-lg sm:text-2xl font-bold hover:scale-105 transition-transform duration-300`}
-                    >
-                      {isChecked ? "✔" : "✕"}
-                    </td>
-                  );
-                })}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* border line */}
-      <div className="max-w-5xl mx-auto mt-14 hidden sm:block">
-        <hr className="  border border-gray-300 " />
-      </div>
-
       <section className="max-w-7xl mx-auto px-4 py-12 sm:pb-20">
         <h2 className="text-center text-2xl sm:text-3xl font-semibold text-[#047BAF] mb-10">
-          Our Global Talent Pool
+          Access to Our Global Network of Talent
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
           {/* Left Text Content */}
           <div className="text-gray-700 text-sm leading-7">
             <p>
-              Global talent pool provides an opportunity to reach out to experts
-              that may be missing or not available locally. Find bilingual
-              specialists in our talent pool. Working with IP Global eliminates
-              the time-consuming recruitment, interviewing, selection and
-              training of new internal employees.
+              Our global talent pool gives you access to experts that may be
+              hard to find or unavailable locally, including bilingual
+              specialists. Partnering with Orbit Pulse saves your time by
+              eliminating the need for lengthy recruitment, interviews,
+              selection, and training of new internal staff.
             </p>
           </div>
 

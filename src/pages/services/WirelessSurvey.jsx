@@ -14,44 +14,40 @@ const WirelessSurvey = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="Wireless Survey as a Service"
-        description="IP Global & Ekahau: Sculpting Perfect Wireless Landscapes for
-              Your Business."
+        title="Wireless Survey Solutions"
+        description="Orbit Pulse & Ekahau: Crafting Optimal Wireless Environments for Your Business"
       />
 
       {/* SERVICES THAT MEET ALL YOUR NEEDS */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
-        SERVICES THAT MEET ALL YOUR NEEDS
+        Optimizing Wireless Connectivity for Your Business
       </h2>
       <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 px-6 lg:px-16 py-6 ">
         {/* Left Content */}
         <div className="max-w-[36rem] text-start lg:text-left">
           <p className="text-[#5E5E5E] leading-7">
-            A wireless site survey is crucial in ensuring that your wireless
-            network provides optimal coverage and performance. By conducting a
-            site survey, you can identify and mitigate issues such as dead
-            zones, interference, and other factors that may impact network
-            performance.
+            A wireless site survey is key to ensuring that your network offers
+            strong, consistent coverage and performance. By conducting a survey,
+            we can identify potential issues such as dead zones and interference
+            that may disrupt your network.
             <br />
             <br />
-            This can help you to improve user experience, reduce downtime, and
-            increase productivity.
+            This process helps to improve user experience, minimize downtime,
+            and enhance productivity.
             <br />
             <br />
-            At IP Global, we leverage the cutting-edge capabilities of the
-            Ekahau device to conduct comprehensive wireless surveys.
-            Understanding the critical role that robust and reliable wireless
-            networks play in today’s connected businesses, we employ Ekahau’s
-            advanced technology to map out optimal access point placements,
-            identify interference sources, and ensure a seamless connectivity
-            experience.
+            At Orbit Pulse, we use the advanced Ekahau device for in-depth
+            wireless surveys. We understand that a robust and dependable
+            wireless network is vital for modern businesses, so we leverage
+            Ekahau’s cutting-edge technology to strategically place access
+            points, identify sources of interference, and guarantee seamless
+            connectivity.
             <br />
             <br />
-            Our wireless survey using Ekahau delivers a holistic view of your
-            wireless environment, paving the way for a network that’s both
-            efficient and resilient. Choose IP Global and be confident in a
-            wireless infrastructure that’s tailored to your
-            unique business needs.
+            Our wireless surveys provide a full view of your network
+            environment, allowing us to build a more efficient and resilient
+            infrastructure. With Orbit Pulse, you can count on a wireless setup
+            that’s perfectly suited to meet your business needs.
           </p>
         </div>
         {/* Right Content - Placeholder for Image */}
@@ -70,7 +66,7 @@ const WirelessSurvey = () => {
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
-          High Performing Wi-Fi with Ekahau Connect
+          Achieve Optimal Wi-Fi Performance with Ekahau Connect
         </h2>
         <p className="text-[#5E5E5E] text-base mt-1 font-bold">Start Anwhere</p>
 
@@ -93,13 +89,13 @@ const WirelessSurvey = () => {
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
-          Our Wireless Site Survey Services using Ekahau
+          Ekahau-Powered Wireless Site Survey Services
         </h2>
         <p className="text-[#5E5E5E] text-base font-bold max-w-4xl mt-5 leading-7">
-          At IP Global, we specialize in conducting wireless site surveys using
-          Ekahau. Our team of certified wireless engineers has years of
-          experience in designing and implementing wireless networks for a
-          variety of clients across different industries.
+          At Orbit Pulse, we excel in providing wireless site surveys using
+          Ekahau technology. Our skilled team of certified wireless engineers
+          has extensive experience in designing and deploying wireless networks
+          for clients across diverse industries.
         </p>
 
         <div className="  w-full max-w-4xl">
@@ -113,7 +109,7 @@ const WirelessSurvey = () => {
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center">
-          Type of Site Survey We Offer :
+          Our Range of Site Survey Services :
         </h2>
 
         <div className="mt-6 max-w-5xl w-full grid md:grid-cols-[2fr_25rem] items-center gap-6">
@@ -123,9 +119,9 @@ const WirelessSurvey = () => {
               Predictive Surveys
             </h3>
             <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
-              They are performed before moving to a new space. The goal of
-              predictive site survey is to determine where to place APs for the
-              best performance throughout the area.
+              Carried out before moving into a new location, predictive surveys
+              are designed to determine the best placement for access points
+              (APs) to ensure maximum coverage and performance across the area.
             </p>
           </div>
           <div className="bg-blue-400 h-36 w-full"></div>
@@ -134,12 +130,12 @@ const WirelessSurvey = () => {
           <div>
             <h3 className="text-[#1D51A2] font-bold text-lg">Active Surveys</h3>
             <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
-              Active surveys are focused on a specific signal or set of signals
-              while the network is in full operation.
+              These surveys are performed while the network is fully
+              operational, focusing on specific signals or sets of signals.
               <br />
-              These measurements include signal strength, throughput, round-trip
-              time, packet loss and retransmission rate throughout the area
-              where signal is used.
+              They gather key metrics like signal strength, throughput,
+              round-trip time, packet loss, and retransmission rates throughout
+              the coverage area.
             </p>
           </div>
           <div className="bg-blue-400 h-36 w-full"></div>
@@ -150,13 +146,12 @@ const WirelessSurvey = () => {
               Passive Surveys
             </h3>
             <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
-              They collect information from all the signals in the environment
-              after the site is built.
+              Conducted after the site is built, passive surveys capture data
+              from all signals present in the environment.
               <br />
-              The goal of the passive survey is to report on all signals at each
-              location, including the installed network and signals from
-              neighboring sites or other devices that generate noise at wireless
-              frequencies.
+              The aim is to evaluate both the installed network signals and any
+              interference from neighboring networks or devices that could
+              affect wireless performance.
             </p>
           </div>
           <div className="bg-blue-400 h-36 w-full"></div>
@@ -176,17 +171,17 @@ const WirelessSurvey = () => {
                 Passive Surveys
               </h3>
               <p className="text-[#5E5E5E] text-sm leading-relaxed">
-                We work with you to understand your specific requirements, such
-                as the number of users, the types of devices being used, and the
-                location of the wireless network.
+                At Orbit Pulse, we collaborate with you to understand your
+                unique needs, including the number of users, types of devices,
+                and the layout of your wireless network.
               </p>
             </div>
             <div>
               <h3 className="text-[#1D51A2] font-bold text-lg">Site Survey:</h3>
               <p className="text-[#5E5E5E] text-sm leading-relaxed">
-                Using Ekahau software, we conduct a thorough wireless site
-                survey to evaluate network coverage and identify areas with poor
-                signal strength or interference.
+                Using Ekahau software, we conduct a comprehensive site survey to
+                assess your network coverage, identifying areas with weak signal
+                strength or interference.
               </p>
             </div>
             <div>
@@ -194,9 +189,9 @@ const WirelessSurvey = () => {
                 Design and Optimization:
               </h3>
               <p className="text-[#5E5E5E] text-sm leading-relaxed">
-                Using Ekahau software, we conduct a thorough wireless site
-                survey to evaluate network coverage and identify areas with poor
-                signal strength or interference.
+                Leveraging Ekahau's advanced features, we optimize your network
+                design, ensuring ideal access point placement and efficient
+                coverage across your space.
               </p>
             </div>
           </div>
@@ -208,9 +203,9 @@ const WirelessSurvey = () => {
               <div>
                 <h3 className="text-[#1D51A2] font-bold text-lg">Reporting:</h3>
                 <p className="text-[#5E5E5E] text-sm leading-relaxed">
-                  We provide detailed reports that outline our findings and
-                  recommendations, including a coverage map and suggested access
-                  point placement.
+                  We deliver detailed reports that summarize our findings,
+                  providing a coverage map and recommendations for access point
+                  positioning to improve performance.
                 </p>
               </div>
               <div>
@@ -218,8 +213,9 @@ const WirelessSurvey = () => {
                   Post-Survey Support:
                 </h3>
                 <p className="text-[#5E5E5E] text-sm leading-relaxed">
-                  We provide ongoing support to ensure that your wireless
-                  network continues to perform optimally.
+                  Our team offers continued support to guarantee that your
+                  wireless network maintains optimal performance and
+                  reliability.
                 </p>
               </div>
 
@@ -230,25 +226,35 @@ const WirelessSurvey = () => {
               {/* Full-width text below */}
               <div className="sm:col-span-2">
                 <h3 className="text-[#1D51A2] font-bold text-lg">
-                  We are authorized Ekahau Partners and Resellers Globally
+                  Global Authorized Ekahau Partners and Resellers
                 </h3>
                 <p className="text-[#5E5E5E] text-sm leading-relaxed mt-2">
-                  Our best seller package is Ekahau Connect which is currently
-                  the most comprehensive WiFi measurement product available in
-                  the market.
+                  As authorized Ekahau partners and resellers worldwide, we
+                  offer the highly popular Ekahau Connect package, the most
+                  comprehensive Wi-Fi measurement solution available today.
                 </p>
-                <ul className="list-disc pl-5 text-[#5E5E5E] text-sm leading-relaxed mt-2">
+                <h1 className="mt-2 text-[#1D51A2] font-bold">
+                  Our Offerings include:
+                </h1>
+                <ul className="list-disc pl-5 text-[#5E5E5E] text-sm leading-relaxed mt-1">
                   <li>
-                    Software Ekahau Pro (planning, radio coverage and
-                    reporting).
+                    <span className="font-bold text-gray-800">Ekahau Pro:</span>{" "}
+                    A powerful software for planning, radio coverage analysis,
+                    and reporting.
                   </li>
                   <li>
-                    Ekahau Sidekick (hardware for measurement including spectrum
-                    analyzer).
+                    <span className="font-bold text-gray-800">
+                      Ekahau Sidekick:
+                    </span>{" "}
+                    A hardware device designed for accurate measurements,
+                    including a built-in spectrum analyzer.
                   </li>
                   <li>
-                    Ekahau Subscription (maintenance contract – includes all
-                    software updates and upgrades).
+                    <span className="font-bold text-gray-800">
+                      Ekahau Subscription:
+                    </span>{" "}
+                    A maintenance contract that provides all software updates
+                    and upgrades to ensure your system remains up to date.
                   </li>
                 </ul>
               </div>

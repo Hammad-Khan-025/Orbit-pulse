@@ -19,32 +19,31 @@ const ITEndUserSupport = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="End User IT Support"
-        description="Our first-line support services are tailored to companies like
-              yours."
+        title="End-User IT Support"
+        description="We offer tailored first-line support services designed specifically for businesses like yours, providing quick and efficient assistance."
       />
 
       {/* SERVICES THAT MEET ALL YOUR NEEDS */}
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
-        SERVICES THAT MEET ALL YOUR NEEDS
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12 uppercase">
+        Comprehensive Services Tailored to Your Needs
       </h2>
       <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 px-6 lg:px-16 py-6 sm:py-10">
         {/* Left Content */}
         <div className="max-w-[30rem] text-center sm:text-start lg:text-left">
           <p className="text-[#5E5E5E] leading-7">
-            Our ITIL Certified Team will be the first line of defense to assist
-            users for any IT Issues & Disruptions. Our platform offers a
-            comprehensive suite of tools and services to help you manage your
-            digital workspaces, increase productivity, and streamline your IT
+            Our ITIL-certified team is your first line of support, ready to
+            assist with any IT challenges or disruptions. We provide a
+            comprehensive platform with the tools and services needed to manage
+            digital workspaces, enhance productivity, and optimize IT
             operations.
             <br />
             <br />
-            We specialize in simplifying complex IT landscapes, empowering
-            businesses to maximize productivity while ensuring security and
-            accessibility. Explore our cutting-edge solutions that bridge the
-            gap between people and technology, transforming the way
-            organizations work and collaborate. Join us on the journey to
-            redefine the standards of modern end user computing.
+            We focus on simplifying complex IT environments, helping businesses
+            boost productivity while maintaining security and accessibility.
+            Explore our advanced solutions that bridge the gap between people
+            and technology, revolutionizing the way organizations collaborate
+            and work together. Join us as we redefine the future of modern
+            end-user computing.
           </p>
         </div>
         {/* Right Content - Placeholder for Image */}
@@ -73,24 +72,23 @@ const ITEndUserSupport = () => {
             <h2 className="text-xl sm:text-2xl font-bold text-[#1D51A2] mb-4">
               Managed Service Desk
             </h2>
-            <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3">
+            <ol className="text-[#5E5E5E] space-y-2 pl-5 list-disc ms-3">
               <li>
-                Our managed service desk solutions deliver end-user support on
-                behalf of your internal resources, which minimizes the
-                engagement of the internal resources.
+                Our Managed Service Desk solutions provide end-user support,
+                reducing the need for internal resource involvement.
               </li>
               <li>
-                IP Global NOC/SOC team will be engaged to manage and monitor the
-                services from back-end, keep the services up and running, we
-                engage the relevant engineer for on-site support to keep the
-                operations running, reports will be shared on a monthly basis.
+                The Orbit Pulse NOC/SOC team handles back-end service management
+                and monitoring to ensure seamless operations. When on-site
+                support is required, we deploy the appropriate engineer to keep
+                your systems running smoothly. Monthly reports will be shared
+                for transparency and performance tracking.
               </li>
               <li>
-                If you don’t want internal resources tied up delivering end-user
-                support, you can leverage our fully managed service desk
-                solution.
+                If you prefer not to allocate internal resources to end-user
+                support, our fully managed service desk is the perfect solution.
               </li>
-            </ul>
+            </ol>
           </div>
 
           {/* Image Section (Only in Mobile Mode) */}
@@ -112,29 +110,32 @@ const ITEndUserSupport = () => {
           {/* Right Column */}
           <div>
             <h3 className="text-[#F0B138] font-semibold mb-2 mt-4">
-              Remote Monitoring and Resolution Solution
+              Remote Monitoring and Resolution
             </h3>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3 sm:ms-10">
-              <li>NOC/SOC team to provide back-end monitoring support</li>
               <li>
-                Target smooth operations and keep the services up and running
+                Continuous back-end monitoring by the NOC/SOC team ensures
+                uninterrupted service.
               </li>
               <li>
-                Proactive measures for issue rectification and enhancement
+                Focus on maintaining smooth operations and service uptime.
+              </li>
+              <li>
+                Proactive issue resolution and system enhancements to prevent
+                disruptions.{" "}
               </li>
             </ul>
 
             <h3 className="text-[#F0B138] font-semibold mt-6 mb-2">
-              On-Site FE Engagement
+              On-Site Field Engineer Support
             </h3>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3 sm:ms-10">
               <li>
-                Field Engineer will be engaged on-site for support whenever
-                required
+                Field engineers are available on-site for support as needed.
               </li>
               <li>
-                Back-end NOC/SOC team will be engaged to the on-site engineer to
-                fulfill any task and requirement
+                Our NOC/SOC team works alongside on-site engineers to address
+                any tasks and ensure optimal service delivery.
               </li>
             </ul>
           </div>
@@ -167,19 +168,19 @@ const ITEndUserSupport = () => {
             </h2>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3">
               <li>
-                Our flexible and reliable IT support services helps you continue
-                managing your service desk by offering you adequate and relevant
-                resources.
+                Our flexible and dependable IT support services help you
+                efficiently manage your service desk by providing the right
+                resources tailored to your needs.
               </li>
               <li>
-                If you’re spending a lot of time finding and maintaining the
-                right resource level and skill sets, you can leverage our
+                If you find it challenging to source and maintain the necessary
+                resource levels and skill sets, you can take advantage of our
                 flexible IT support services.
               </li>
               <li>
-                IP Global OPS team will be engaged to manage the IT Service Desk
-                requests. Engage the relevant engineer to fulfill the task and
-                share the SVR report by the end of the service completion
+                The Orbit Pulse OPS team will oversee IT service desk requests,
+                assign the appropriate engineer to complete tasks, and deliver
+                an SVR report upon service completion.
               </li>
             </ul>
           </div>
@@ -195,31 +196,32 @@ const ITEndUserSupport = () => {
           {/* Right Column */}
           <div>
             <h3 className="text-[#F0B138] font-semibold mb-2 lg:mt-4">
-              Remote Monitoring and Resolution Solution
+              Remote Monitoring and Resolution
             </h3>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3 sm:ms-10">
               <li>
-                OPS team book the task and engage the relevant engineer for
-                On-Site Engagement Ensure that client is fully updated on the
-                task and rectify any reported issue.
+                The OPS team will schedule tasks and assign the relevant
+                engineer for on-site support.
+              </li>
+
+              <li>
+                Ensures clients are kept informed throughout the process and
+                quickly resolves any issues.
               </li>
             </ul>
 
             <h3 className="text-[#F0B138] font-semibold mt-6 mb-2">
-              On-Site FE Engagement
+              On-Site Field Engineer Support
             </h3>
             <ul className="text-[#5E5E5E] space-y-2 list-disc pl-5 ms-3 sm:ms-10">
               <li>
-                Field Engineer engages to provide on-site support to the Remote
-                Engineer
+                Field engineers will provide on-site assistance, working
+                alongside remote engineers when needed.
               </li>
               <li>
-                Field Engineer may also be engaged to fulfill any IT Task to
-                furnish and up the service
-              </li>
-              <li>
-                New Installations and dismantle old hardware Establish
-                connectivity on network etc
+                Engineers may also handle specific IT tasks, including new
+                hardware installations, network setup, and the removal of old
+                equipment.
               </li>
             </ul>
           </div>
@@ -252,23 +254,23 @@ const ITEndUserSupport = () => {
           </div>
           <div>
             <h2 className="text-lg sm:text-xl font-bold text-[#1D51A2] text-center sm:text-start mb-3 sm:mb-0">
-              Advantages of Using Our IT Support Service
+              Benefits of Choosing Our IT Support Services
             </h2>
             <ul className="list-disc pl-5 text-gray-700 mt-2 ms-3 sm:ms-0">
               <li>
-                Our managed service desk solutions deliver end-user support on
-                behalf of your internal resources, which minimizes the
-                engagement of the internal resources.
+                Our managed service desk solutions provide end-user support on
+                your behalf, minimizing the involvement of your internal
+                resources.
               </li>
               <li>
-                IP Global NOC/SOC team will be engaged to manage and monitor
-                the services from back-end, keep the services up and running, we
-                engage the relevant engineer for on-site support to keeping the
-                operations running, reports will be shared on monthly basis.
+                The Orbit Pulse NOC/SOC team manages and monitors services from
+                the back-end to ensure smooth operations. We deploy the right
+                engineer for on-site support when needed, and we provide
+                detailed reports on a monthly basis.
               </li>
               <li>
-                If you don’t want internal resources tied up delivering end-user
-                support, you can leverage our fully managed service desk
+                If you prefer not to tie up internal resources with end-user
+                support tasks, our fully managed service desk is the ideal
                 solution.
               </li>
             </ul>
@@ -282,23 +284,26 @@ const ITEndUserSupport = () => {
           </div>
           <div>
             <h2 className="text-lg sm:text-xl font-bold text-[#1D51A2] text-center sm:text-start mb-3 sm:mb-0">
-              What Will You Get Based Choosing User IT Support?
+              Why Choose Our User IT Support Services?
             </h2>
             <ul className="list-disc pl-5 text-gray-700 mt-2 ms-3 sm:ms-0">
               <li>
-                Complete IMAC/R/D-Processes (Install, Move, Add & Change as well
-                as Remove & Dispose).
+                Complete IMAC/R/D processes (Install, Move, Add & Change, Remove
+                & Dispose).
               </li>
               <li>
-                Our Smooth hardware changes, system upgrades or moves without
-                disrupting your day-to-day operations.
+                Smooth hardware upgrades, system changes, and relocations
+                without disrupting your operations.
               </li>
               <li>
-                Supervision of warranty cases and repairs as well as proper
-                disposal of hardware including data deletion.
+                Efficient management of warranty cases, repairs, and proper
+                disposal of hardware, including secure data deletion.
               </li>
-              <li>Highly experiences rollout team.</li>
-              <li>Standardized processes certified according to ISO 20000.</li>
+              <li>A skilled rollout team to ensure seamless implementation.</li>
+              <li>
+                ISO 20000-certified standardized processes to ensure quality and
+                consistency.
+              </li>
             </ul>
           </div>
         </div>
@@ -314,7 +319,7 @@ const ITEndUserSupport = () => {
       </div>
 
       {/* End user support */}
-      <section className="flex flex-col sm:flex-row gap-8 justify-center sm:justify-between items-center bg-white p-6 max-w-5xl mx-auto mb-10">
+      <section className="flex flex-col sm:flex-row gap-8 justify-center sm:justify-between items-center bg-white p-6 max-w-6xl mx-auto mb-10">
         <h2 className="text-lg sm:text-2xl font-bold text-[#1D51A2]">
           End User Support
         </h2>
@@ -324,16 +329,27 @@ const ITEndUserSupport = () => {
           <img src={icon3} alt="User IT Support" className="w-32 h-32" />
         </div>
 
-        <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-52 sm:w-auto">
+        <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-52 sm:w-[40rem]">
           <ul className="list-disc pl-5">
-            <li>1st line support</li>
-            <li>Problem resolution</li>
-            <li>Incident Management</li>
+            <li>Initial assistance for user queries and issues.</li>
+            <li>
+              Efficiently resolving technical problems to minimize disruptions.
+            </li>
+            <li>
+              Handling and resolving incidents swiftly to maintain service
+              continuity.
+            </li>
           </ul>
           <ul className="list-disc pl-5">
-            <li>Third Party Escalation</li>
-            <li>Service Request Fulfillment</li>
-            <li>User Device Support</li>
+            <li>
+              Collaborating with external vendors for advanced issue resolution
+              when necessary.
+            </li>
+            <li>Ensuring timely completion of user service requests.</li>
+            <li>
+              Providing comprehensive support for user devices to ensure smooth
+              functionality.
+            </li>
           </ul>
         </div>
 

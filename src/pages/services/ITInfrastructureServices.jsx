@@ -53,32 +53,29 @@ const ITInfrastructureServices = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="IT Infrastructure Services"
-        description="Our team of experienced professionals can work with you to plan,
-              execute, and monitor your data center movement or migration,
-              ensuring minimal disruption to your operations and no loss of
-              data."
+        title="IT Infrastructure Solutions"
+        description="Our expert team will partner with you to strategically plan, implement, and manage your data center migration, ensuring seamless transitions with minimal impact on your operations and no data loss."
       />
 
       <section className="flex flex-col items-center text-center mt-10  bg-white font-kannada px-5">
         <h2 className="text-lg md:text-3xl font-bold text-[#FCB813] uppercase">
-          Leading the Charge in IT Infrastructure{" "}
+          Leading the Way in IT Infrastructure{" "}
           <br className="hidden sm:block" /> Service and Management.
         </h2>
         <p className="mt-6 text-gray-600 max-w-5xl">
-          In the dynamic world of technology, businesses require an IT backbone
-          that is both resilient and adaptable. At IP Global, we don’t just
-          provide IT infrastructure services; we manage and optimize them to
-          ensure your enterprise is always a step ahead. Through our holistic
-          approach, we deliver integrated solutions that are the perfect blend
-          of innovation, efficiency, and reliability, ensuring that your
-          business infrastructure supports and enhances your strategic goals.
+          In today’s fast-paced technological landscape, businesses need an IT
+          infrastructure that is both resilient and flexible. At Orbit Pulse, we
+          go beyond providing IT infrastructure services—we manage, optimize,
+          and enhance them to keep your business ahead of the curve. Our
+          comprehensive approach offers integrated solutions that combine
+          innovation, efficiency, and reliability, ensuring that your IT
+          infrastructure not only supports but drives your strategic objectives.
         </p>
         <p className="mt-4 text-gray-600 max-w-5xl">
-          We offer you access functions for information and data to boost your
-          operations 24/7. IT infrastructure management focuses on the
-          supervision of important IT infrastructure elements needed to deliver
-          business services.
+          We provide round-the-clock access to vital information and data to
+          help boost your operations. Our IT infrastructure management services
+          focus on overseeing the key IT components necessary to deliver
+          seamless and effective business services.
         </p>
 
         {/* image section for desktop*/}
@@ -113,10 +110,11 @@ const ITInfrastructureServices = () => {
 
       <section className="flex flex-col items-center justify-center mt-10 mx-5">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
-          Our Infrastructure Management
+          Our Infrastructure Management Services
         </h2>
         <p className="text-[#5E5E5E] text-sm sm:text-base mt-1 font-bold">
-          We Focus On:
+          We specialize in optimizing and maintaining every aspect of your IT
+          infrastructure, focusing on:
         </p>
 
         {/* MOBILE layout */}
@@ -197,7 +195,7 @@ const ITInfrastructureServices = () => {
 
       <section className="flex flex-col items-center justify-center mt-8 px-5 sm:px-0">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
-          Summary of IP Global Infra Management
+          Orbit Pulse Infrastructure Management Summary
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-20 mt-5 w-full max-w-4xl">
           <ul className="list-disc pl-5 text-sm text-[#5E5E5E] leading-7">

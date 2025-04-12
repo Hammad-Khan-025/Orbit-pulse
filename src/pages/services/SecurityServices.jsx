@@ -19,23 +19,23 @@ const SecurityServices = () => {
 
   const networkSecurityData = [
     {
-      title: "Secure Access Service Edge",
+      title: "Secure Access Service Edge (SASE)",
       description:
-        "Modernize networking and network security with a converged cloud-based service model, managed and optimized by a global leader in managed security.",
+        "Transform your networking and network security with a unified, cloud-based service model, managed and optimized by a global leader in cybersecurity.",
       bgColor: "bg-[#3EA3DE4D]",
       image: icon1,
     },
     {
-      title: "Managed Firewall Services",
+      title: "Advanced Managed Firewall Services",
       description:
-        "Engage monitoring and management with advanced analytics through near-real-time data correlation across leading firewall technologies.",
+        "Leverage comprehensive monitoring and management, enhanced with advanced analytics and near-real-time data correlation across industry-leading firewall technologies.",
       bgColor: "bg-[#D9D9D94D]",
       image: icon2,
     },
     {
-      title: "Intrusion Detection And Prevention",
+      title: "Intrusion Detection and Prevention Services",
       description:
-        "Prevent unauthorized network access and data theft with monitoring, alerting and support of network IDPS across the infrastructure.",
+        "Safeguard your network from unauthorized access and data theft through continuous monitoring, alerting, and support for Network IDPS across your entire infrastructure.",
       bgColor: "bg-[#3EA3DE4D]",
       image: icon3,
     },
@@ -46,8 +46,8 @@ const SecurityServices = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="Managed Security Services"
-        description="Currently, more organizations and enterprises are opting for managed security services to get security expertise and reduce the workload of their security staff. The main concern for an organization is getting a trusted security provider."
+        title="Comprehensive Security Management Services"
+        description="More organizations and enterprises are increasingly choosing managed security services to gain access to specialized security expertise while easing the burden on their internal security teams. A key concern for many businesses is finding a trusted and reliable security provider that can ensure the protection of their valuable assets and data."
       />
 
       <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 px-5 lg:px-10 py-6 sm:py-10 max-w-7xl mx-auto mt-2 sm:mt-10">
@@ -58,20 +58,21 @@ const SecurityServices = () => {
           </h2>
           <ul className="text-[#5E5E5E] leading-10 max-w-[40rem] lg:text-left list-disc">
             <li>
-              We provide managed security services to have an oversight and
-              administer the security processes of your business or
-              organization.
+              We offer managed security services to oversee and manage your
+              organization's security operations
             </li>
             <li>
-              We offer a wide variety of security services by setting up
-              infrastructure through incident response and security management.
+              Our services include a broad range of security solutions, from
+              setting up infrastructure to incident response and ongoing
+              security management.
             </li>
             <li>
-              As security service providers, we can specialize in specific areas
-              of your organization that need security detail.
+              As specialized security providers, we focus on specific areas of
+              your organization that require detailed security attention.
             </li>
             <li>
-              You can also fully outsource your enterprise’s security program.
+              You also have the option to fully outsource your organization's
+              entire security program to us.
             </li>
           </ul>
         </div>
@@ -93,22 +94,23 @@ const SecurityServices = () => {
           </h2>
           <ul className="text-[#5E5E5E] leading-10 max-w-[40rem] lg:text-left list-disc">
             <li>
-              We can augment your security program with tailored services,
-              including threat, cloud, infrastructure, data, identity and
-              response management.
+              We enhance your security program with customized services,
+              including threat management, cloud security, infrastructure
+              protection, data security, identity management, and incident
+              response.
             </li>
             <li>
-              Our specialists can help optimize, fine-tune, and improve security
-              program efficiency for the long-term
+              Our experts work to optimize and refine your security program,
+              ensuring long-term efficiency and effectiveness.
             </li>
             <li>
-              Our specialists help you address your security needs, from the
-              simplest to the most complex, monitoring and managing security
-              incidents 24x7x365
+              We provide continuous monitoring and management of security
+              incidents, addressing both simple and complex security needs,
+              24/7, year-round.
             </li>
             <li>
-              Our people, technology, facilities and processes are among the
-              best in the world.
+              Our team, technology, facilities, and processes are among the best
+              globally, ensuring top-tier security management.
             </li>
           </ul>
         </div>
@@ -122,43 +124,6 @@ const SecurityServices = () => {
         </div>
       </section>
 
-      <div className="max-w-[75rem] mx-auto px-5 sm:px-0">
-        <BorderLine />
-      </div>
-
-      <section className="flex flex-col items-center pt-6 sm:pt-3 space-y-6 max-w-7xl mx-auto px-5">
-        {/* Title */}
-        <h1 className="text-xl md:text-3xl font-semibold text-[#1D51A2] pb-3 text-center">
-          Managed Cybersecurity Services
-        </h1>
-
-        {/* Service Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 justify-center gap-4 pb-3">
-          {services.map((service, index) => (
-            <button
-              key={index}
-              className={`px-4 py-2 text-sm rounded-md shadow-sm w-full sm:w-48 bg-[#3EA3DE4D] text-[#5E5E5E]`}
-            >
-              {service}
-            </button>
-          ))}
-        </div>
-
-        {/* Content Section */}
-        <div className="text-center space-y-2">
-          <h2 className="text-xl sm:text-3xl font-semibold text-[#047BAF]">
-            Threat Management
-          </h2>
-          <p className="text-[#5E5E5E] max-w-3xl mx-auto text-sm sm:text-base leading-8">
-            Protect critical assets from vulnerabilities, detect advanced
-            threats and quickly respond and recover from disruptions.
-          </p>
-        </div>
-
-        {/* Placeholder Box */}
-        <div className="w-full max-w-3xl h-72 bg-gray-200 rounded-2xl" />
-      </section>
-
       <div className="max-w-[75rem] mx-auto px-5 sm:px-0 pt-5 sm:pt-8">
         <BorderLine />
       </div>
@@ -166,35 +131,34 @@ const SecurityServices = () => {
       <div className="flex flex-col items-center px-4 py-5">
         {/* Section Title */}
         <h2 className="text-2xl md:text-3xl font-semibold text-blue-800 text-center">
-          Managed Network Security Services
+          Comprehensive Managed Network Security Solutions
         </h2>
 
         {/* Service Cards */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 my-10 sm:my-20">
-  {networkSecurityData.map((service, index) => (
-    <div key={index} className="group">
-      <div
-        className={`w-80 sm:w-96 h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-8 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
-      >
-        {/* Image Icon */}
-        <img
-          src={service.image}
-          alt={service.title}
-          className="w-24 sm:w-32 h-24 sm:h-32 mb-3"
-        />
+          {networkSecurityData.map((service, index) => (
+            <div key={index} className="group">
+              <div
+                className={`w-80 sm:w-96 h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-8 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
+              >
+                {/* Image Icon */}
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-24 sm:w-32 h-24 sm:h-32 mb-3"
+                />
 
-        {/* Title */}
-        <h3 className="text-lg font-semibold text-[#434242] mb-2">
-          {service.title}
-        </h3>
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-[#434242] mb-2">
+                  {service.title}
+                </h3>
 
-        {/* Description */}
-        <p className="text-sm text-[#5E5E5E]">{service.description}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
+                {/* Description */}
+                <p className="text-sm text-[#5E5E5E]">{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </article>
   );

@@ -16,30 +16,30 @@ const Services = () => {
   const onboardingSteps = [
     {
       step: "Step 1",
-      title: "Commencement of the Project",
+      title: "Project Kickoff",
       description:
-        "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+        "Delivering dependable and responsive IT support to empower users in their everyday operations. From initial setup to troubleshooting, we ensure smooth, hassle-free technology experiences that drive productivity.",
       icon: step1Icon,
     },
     {
       step: "Step 2",
-      title: "Sharing Knowledge",
+      title: "Knowledge Sharing",
       description:
-        "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+        "Offering consistent and reliable IT support to equip users in their daily activities. From setup to troubleshooting, we deliver smooth tech experiences that enhance efficiency and productivity.",
       icon: step2Icon,
     },
     {
       step: "Step 3",
       title: "Interim Support",
       description:
-        "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+        "Providing reliable and responsive IT support to keep users productive during transitional phases. Whether it’s setup or troubleshooting, we ensure seamless tech operations every step of the way.",
       icon: step3Icon,
     },
     {
       step: "Step 4",
       title: "Delivery",
       description:
-        "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+        "Ensuring dependable and proactive IT support to empower users in their daily workflows. From initial setup to issue resolution, we deliver smooth and efficient tech experiences that boost overall productivity.",
       icon: step4Icon,
     },
   ];
@@ -84,23 +84,23 @@ const Services = () => {
   ];
 
   const servicesLeft = [
-    "24/7/365 IT Helpdesk",
-    "Global Coverage in 190 Countries",
-    "IT Remote Hands",
-    "IT Staff Augmentation",
-    "IT Asset Disposition (ITAD)",
-    "Infrastructure Management",
-    "One Stop Shop For Network, Storage & Server Deals",
+    "Expert Consulting, IT Leadership & Strategic Management",
+    "Proactive Risk Assessment & Mitigation",
+    "Optimized IT Systems for Peak Performance",
+    "24/7/365 IT Helpdesk Support",
+    "Skilled IT Staff Augmentation",
+    "Remote Hands IT Support",
+    "Global Coverage Across 190+ Countries",
   ];
 
   const servicesRight = [
-    "Next-Gen Data Center Support & Management",
-    "Consulting, IT Leadership & Management",
-    "Proactive Risk Management And Risk Mitigation",
-    "Unmatched Reliability And Unmatched Experience",
-    "Ekahau, Wireless Surveys as a Service (WsaaS)",
-    "Global Warehousing And Inventory Management",
-    "Ensuring your IT systems are always optimized",
+    "Global Warehousing & Inventory Solutions",
+    "Secure IT Asset Disposition (ITAD)",
+    "Wireless Surveys as a Service (Ekahau WsaaS)",
+    "One-Stop Shop for Network, Storage & Server Solutions",
+    "End-to-End Infrastructure Management",
+    "Next-Gen Data Center Support & Operations",
+    "Proven Reliability and Extensive Industry Experience",
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -120,7 +120,7 @@ const Services = () => {
       <ServiceBanner
         image={mainImage}
         title="IT MANAGED SERVICE"
-        description="One stop shop for all your IT problems and reliable partner in managing your service requests through 24/7 accessible team of experts."
+        description="Your all-in-one solution for IT challenges and a trusted partner in managing service requests—backed by a 24/7 team of dedicated experts."
       />
 
       {/* Manage IT services section */}
@@ -131,24 +131,25 @@ const Services = () => {
             BENEFITS OF MANAGED <br /> IT SERVICES
           </h2>
           <p className="text-[#5E5E5E] mb-4">
-            At IP Global, we understand the transformative power of managed
-            services. Our offerings ensure businesses operate at their peak,
-            liberating them from the intricacies of IT management.
+            At Orbit Pulse, we recognize the game-changing impact of managed IT
+            services. Our solutions are designed to help businesses run at their
+            best—freeing them from the complexities of day-to-day IT management.
           </p>
           <p className="text-[#047BAF] mb-4 font-semibold">
-            By choosing Orbit Pulse 365 managed services, companies can direct
-            their energies to core objectives, knowing their IT infrastructure
-            is in expert hands.
+            By partnering with Orbit Pulse, organizations can focus on their
+            core goals while trusting that their IT infrastructure is expertly
+            handled.
           </p>
           <p className="text-[#5E5E5E] mb-4">
-            We offer a cost-efficient solution that eliminates the need for
-            extensive in-house IT teams and mitigates unforeseen expenses.
+            Our services offer a cost-effective alternative to building large
+            in-house IT teams, helping reduce overhead and avoid unexpected
+            expenses.
             <br />
             <br />
-            With our 24/7 support, businesses can enjoy unwavering uptime,
-            fortified data security, and the guarantee of swift issue
-            resolution. Partnering with IP Global is a strategic step towards
-            unparalleled operational excellence.
+            With 24/7 support, we ensure maximum uptime, strong data protection,
+            and rapid issue resolution. Choosing Orbit Pulse isn’t just
+            outsourcing IT—it’s a smart move toward greater efficiency and
+            operational excellence.
           </p>
         </div>
 

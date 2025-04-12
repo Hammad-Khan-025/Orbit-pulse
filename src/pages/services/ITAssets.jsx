@@ -29,31 +29,29 @@ const ITAssets = () => {
 
   const itadServices = [
     {
-      title: "Secure Data Destruction",
+      title: "Data Destruction",
       description: [
-        "Professional-grade data wiping",
-        "Certified hard drive shredding",
-        "Guaranteeing data privacy & compliance",
+        "with Security Expert-level data wiping Certified hard drive shredding Ensuring data privacy and regulatory compliance",
       ],
       bgColor: "bg-[#3EA3DE26]",
       image: icon1,
     },
     {
-      title: "Environmentally Responsible Recycling",
+      title: "Eco-Friendly Recycling Solutions",
       description: [
-        "Professional-grade data wiping",
-        "Certified hard drive shredding",
-        "Guaranteeing data privacy & compliance",
+        "Expert data wiping services",
+        "Certified hard drive destruction",
+        "Ensuring privacy protection and regulatory compliance",
       ],
       bgColor: "bg-[#FCB81326]",
       image: icon1,
     },
     {
-      title: "Value Recovery",
+      title: "Asset Value Recovery",
       description: [
-        "Efficient remarketing strategies",
-        "Maximizing return on retired assets",
-        "Transparent and competitive pricing",
+        "Effective remarketing techniques",
+        "Optimizing returns on retired equipment",
+        "Clear and competitive pricing",
       ],
       bgColor: "bg-[#3EA3DE26]",
       image: icon1,
@@ -61,9 +59,9 @@ const ITAssets = () => {
     {
       title: "Logistics & Transportation",
       description: [
-        "Secure collection and transportation",
-        "Comprehensive tracking system",
-        "Flexible scheduling options",
+        "Safe collection and delivery",
+        "Complete tracking system",
+        "Flexible scheduling for convenience",
       ],
       bgColor: "bg-[#3EA3DE26]",
       image: icon1,
@@ -71,9 +69,9 @@ const ITAssets = () => {
     {
       title: "Reporting & Certification",
       description: [
-        "Detailed asset reports",
-        "Certificate of Destruction/Recycling",
-        "Compliance with global standards",
+        "Comprehensive asset reports",
+        "Certificate of Destruction/Recycling ",
+        "Adherence to international compliance standards.",
       ],
       bgColor: "bg-[#3EA3DE26]",
       image: icon1,
@@ -85,25 +83,34 @@ const ITAssets = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="Comprehensive IT Asset Disposition (ITAD) Solutions
-Secure. Sustainable. Simplified"
-        description="A montage of IT equipment – computers, servers, mobile devices – transitioning into a green, eco-friendly symbol, denoting responsible recycling."
+        title={
+          <>
+            Complete IT Asset Disposition (ITAD) Solutions
+            <br />
+            Secure. Sustainable. Streamlined.
+          </>
+        }
+        description="A sequence of IT devices like computers, servers, and mobile phones evolving into a green, eco-conscious symbol, representing sustainable recycling practices."
       />
 
       <section className="max-w-5xl mx-auto px-6 lg:ps-20 pt-10 sm:pt-14">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] font-kannada text-center mb-6 sm:mb-10">
-          NAVIGATING THE COMPLEXITIES OF IT ASSET DISPOSITION?
+          Simplifying the Complexities of IT Asset Disposition?
         </h1>
         <p className="text-[#5E5E5E] text-center max-w-3xl mx-auto leading-7">
-          We offer a seamless, end-to-end solution ensuring your IT assets are
-          managed responsibly, securely, and sustainably.
+          We provide a comprehensive, hassle-free solution that guarantees your
+          IT assets are handled securely, responsibly, and sustainably.
         </p>
         <img
           ref={imageRef}
           src={assetsImage}
           alt="Assets"
           className={`w-[45rem] mx-auto pt-5 transition-all duration-700 ease-out 
-    ${imageInView ? "sm:opacity-100 sm:translate-x-0" : "sm:opacity-0 sm:translate-x-80"}
+    ${
+      imageInView
+        ? "sm:opacity-100 sm:translate-x-0"
+        : "sm:opacity-0 sm:translate-x-80"
+    }
   `}
         />
       </section>

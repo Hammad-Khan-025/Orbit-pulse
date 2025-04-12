@@ -13,7 +13,7 @@ const Header = () => {
         { name: "Overview", path: "/services/IT-managed-services" },
         { name: "End User IT Support", path: "/services/IT-end-user-support" },
         {
-          name: "IT Infrastructure Management",
+          name: "IT Infrastructure Solutions",
           path: "/services/IT-infrastructure-management",
         },
         {

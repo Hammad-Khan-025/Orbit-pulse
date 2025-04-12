@@ -13,32 +13,32 @@ const Home = () => {
     {
       title: "End-User Support",
       description:
-        "Providing responsive and reliable IT assistance to empower users in their daily tasks. From troubleshooting to setup, we ensure seamless tech experiences for enhanced productivity.",
+        "Offering prompt and reliable IT support to streamline daily operations. From setup to troubleshooting, we ensure a seamless tech experience for maximum efficiency.",
     },
     {
       title: "IT INFRASTRUCTURE",
       description:
-        "Building robust, scalable technology foundations that support your business's growth and stability. From network architecture to data security, we ensure seamless, resilient IT environments.",
+        "Designing scalable and resilient technology solutions to support your business growth and stability. From network infrastructure to data security, we ensure a seamless and secure IT environment.",
     },
     {
       title: "WIFI SURVEYS",
       description:
-        "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
+        "Improving wireless connectivity with comprehensive site surveys for seamless coverage and performance. We detect and fix signal issues, ensuring fast and dependable WiFi across your environment.",
     },
     {
       title: "FLEXIBLE-ON SITE",
       description:
-        "Offering adaptable on-site support to meet your unique operational needs. Our team provides personalized assistance, ensuring seamless integration and immediate solutions wherever you are.",
+        "Providing flexible on-site support to align with your operational requirements. Our team ensures seamless integration and prompt solutions, keeping your business running smoothly.",
     },
     {
       title: "SECURITY SERVICES",
       description:
-        "Building robust, scalable technology foundations that support your business's growth and stability. From network architecture to data security, we ensure seamless, resilient IT environments.",
+        "Building secure and scalable technology frameworks to drive your business’s growth and stability. From network infrastructure to data security, we ensure a reliable and seamless IT environment.",
     },
     {
-      title: "WSAAS",
+      title: "IT Outsourcing",
       description:
-        "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
+        "Need expert support and a skilled team to keep your daily operations running smoothly? We offer scalable, round-the-clock assistance to ensure uninterrupted business performance.",
     },
     {
       title: "UI/UX DESIGN",
@@ -83,9 +83,8 @@ const Home = () => {
       {/* Banner section */}
       <ServiceBanner
         image={mainImage}
-        title="EMPOWERING YOUR FUTURE WITH INNOVATIVE IT SOLUTIONS"
-        description="We start with understanding your “Problem Statement”.and, Tailor
-              Solutions & Services that “Fit Your Business Needs”."
+        title="STRENGTHEN YOUR BUSINESS WITH OUR RELIABLE IT SUPPORT!"
+        description="We start by identifying your challenges and deliver tailored solutions that seamlessly fit your business needs."
         fullWidth={true}
       />
 
@@ -100,11 +99,11 @@ const Home = () => {
             YOU CONCENTRATE ON INNOVATION.
           </p>
           <p className="mt-6 text-gray-700 text-base md:text-lg">
-            While "<b>You</b>" harness creativity to enhance your enterprise, "
-            <b>We</b>" accelerate your time to market, amplify organizational
-            performance, and ensure you stay competitive. Our extensive global
-            clientele partners with JP Global for our wealth of experience, deep
-            expertise, and unwavering integrity.
+            As "<b>you</b>" focus on innovation to grow your business, "
+            <b>we</b>" help you speed up your time to market, boost operational
+            efficiency, and maintain a competitive edge. Companies worldwide
+            trust Orbit Pulse for our extensive experience, deep industry
+            knowledge, and commitment to integrity.
           </p>
           <div className="max-w-4xl mx-auto">
             <hr className="mt-10 border-gray-300 " />
@@ -159,13 +158,13 @@ const Home = () => {
             <hr className="mt-10 border-gray-300 " />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8 mt-12">
-            WHY CHOOSE US?
+            Orbit Pulse
           </h2>
           <p className="text-[#5E5E5E] text-center">
-            At Orbit pals, we understand every step of your business process.
-            That’s why we ensure no detail is overlooked, whether it’s meeting
-            SLAs or dispatching expert engineers to remote locations for
-            hardware issues.
+            We understand your business processes inside and out, ensuring every
+            detail is addressed. Whether it's meeting SLAs or dispatching expert
+            engineers to remote locations for hardware support, we deliver
+            seamless solutions.
           </p>
         </div>
 
