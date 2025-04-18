@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import mainImage from "../../assets/servicesImages/IT-infrastructure-services/mainImage.png";
 import settingsIcon from "../../assets/servicesImages/IT-infrastructure-services/settings-icon.png";
-import summaryImage from "../../assets/servicesImages/IT-infrastructure-services/summaryImage.png";
+import summaryImage1 from "../../assets/servicesImages/IT-infrastructure-services/summaryImage1.png";
+import summaryImage2 from "../../assets/servicesImages/IT-infrastructure-services/summaryImage2.png";
 import bgGroup from "../../assets/servicesImages/IT-infrastructure-services/bgGroup.png";
 import bgGroupMobile from "../../assets/servicesImages/IT-infrastructure-services/bgGroupMobile.png";
 import endUser from "../../assets/servicesImages/IT-infrastructure-services/endUserImage.png";
@@ -112,7 +113,7 @@ const ITInfrastructureServices = () => {
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
           Our Infrastructure Management Services
         </h2>
-        <p className="text-[#5E5E5E] text-sm sm:text-base mt-1 font-bold">
+        <p className="text-[#5E5E5E] text-sm sm:text-base mt-1 mb-4 font-bold">
           We specialize in optimizing and maintaining every aspect of your IT
           infrastructure, focusing on:
         </p>
@@ -236,12 +237,8 @@ const ITInfrastructureServices = () => {
           </ul>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 sm:mt-10 w-full max-w-4xl">
-          <img src={summaryImage} alt="Woman working on laptop" className="" />
-          <img
-            src={summaryImage}
-            alt="Woman working on laptop"
-            className="transform rotate-y-180"
-          />
+          <img src={summaryImage1} alt="working on laptop" />
+          <img src={summaryImage2} alt="working on laptop"/>
         </div>
       </section>
 

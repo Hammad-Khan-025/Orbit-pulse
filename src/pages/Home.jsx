@@ -7,55 +7,65 @@ import feature3Img from "../assets/homeImages/feature3Img.png";
 import mapImg from "../assets/homeImages/mapImg.png";
 import ServiceCard from "../components/ServiceCard";
 import ServiceBanner from "../components/ServicesBanner";
+import animation1 from "../assets/Animation/1/Frame 41.json";
+import animation2 from "../assets/Animation/2/Frame 50.json";
+import animation3 from "../assets/Animation/3/Frame 58.json";
+import animation4 from "../assets/Animation/4/Frame 66.json";
+import animation5 from "../assets/Animation/5/Frame 72.json";
+import animation6 from "../assets/Animation/6/Frame 76.json";
+import animation7 from "../assets/Animation/7/Frame 80.json";
+import animation8 from "../assets/Animation/8/Frame 87.json";
+import animation9 from "../assets/Animation/9/Frame 94.json";
 
 const Home = () => {
   const services = [
     {
+      image: animation1,
       title: "End-User Support",
-      description:
-        "Offering prompt and reliable IT support to streamline daily operations. From setup to troubleshooting, we ensure a seamless tech experience for maximum efficiency.",
+      description: "Offering prompt and reliable IT support to streamline daily operations. From setup to troubleshooting, we ensure a seamless tech experience for maximum efficiency.",
     },
     {
+      image: animation2,
       title: "IT INFRASTRUCTURE",
-      description:
-        "Designing scalable and resilient technology solutions to support your business growth and stability. From network infrastructure to data security, we ensure a seamless and secure IT environment.",
+      description: "Designing scalable and resilient technology solutions to support your business growth and stability. From network infrastructure to data security, we ensure a seamless and secure IT environment.",
     },
     {
+      image: animation3,
       title: "WIFI SURVEYS",
-      description:
-        "Improving wireless connectivity with comprehensive site surveys for seamless coverage and performance. We detect and fix signal issues, ensuring fast and dependable WiFi across your environment.",
+      description: "Improving wireless connectivity with comprehensive site surveys for seamless coverage and performance. We detect and fix signal issues, ensuring fast and dependable WiFi across your environment.",
     },
     {
+      image: animation4,
       title: "FLEXIBLE-ON SITE",
-      description:
-        "Providing flexible on-site support to align with your operational requirements. Our team ensures seamless integration and prompt solutions, keeping your business running smoothly.",
+      description: "Providing flexible on-site support to align with your operational requirements. Our team ensures seamless integration and prompt solutions, keeping your business running smoothly.",
     },
     {
+      image: animation5,
       title: "SECURITY SERVICES",
-      description:
-        "Building secure and scalable technology frameworks to drive your business’s growth and stability. From network infrastructure to data security, we ensure a reliable and seamless IT environment.",
+      description: "Building secure and scalable technology frameworks to drive your business’s growth and stability. From network infrastructure to data security, we ensure a reliable and seamless IT environment.",
     },
     {
+      image: animation6,
       title: "IT Outsourcing",
-      description:
-        "Need expert support and a skilled team to keep your daily operations running smoothly? We offer scalable, round-the-clock assistance to ensure uninterrupted business performance.",
+      description: "Need expert support and a skilled team to keep your daily operations running smoothly? We offer scalable, round-the-clock assistance to ensure uninterrupted business performance.",
     },
     {
+      image: animation7,
       title: "UI/UX DESIGN",
-      description:
-        "Offering adaptable on-site support to meet your unique operational needs. Our team provides personalized assistance, ensuring seamless integration and immediate solutions wherever you are.",
+      description: "Offering adaptable on-site support to meet your unique operational needs. Our team provides personalized assistance, ensuring seamless integration and immediate solutions wherever you are.",
     },
     {
+      image: animation8,
       title: "WEB & APP DEVELOPMENT",
-      description:
-        "Building robust, scalable technology foundations that support your business’s growth and stability. From network architecture to data security, we ensure seamless, resilient IT environments.",
+      description: "Building robust, scalable technology foundations that support your business’s growth and stability. From network architecture to data security, we ensure seamless, resilient IT environments.",
     },
     {
+      image: animation9,
       title: "E-LEARNING TRAINING COURSES",
-      description:
-        "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
-    },
+      description: "Optimizing wireless connectivity through detailed site surveys for seamless coverage and performance. We identify and resolve signal issues, ensuring fast, reliable WiFi across your spaces.",
+    }
   ];
+  
 
   const features = [
     {
@@ -88,6 +98,7 @@ const Home = () => {
         fullWidth={true}
       />
 
+
       {/* Header Section */}
       <section className="text-center my-14 font-bangla px-3  max-w-6xl mx-auto">
         <h1 className="text-2xl sm:text-4xl font-bold text-[#FCB813] ">
@@ -116,12 +127,13 @@ const Home = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8">
           SUPPORTING YOUR JOURNEY
         </h2>
-
+        
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 items-stretch px-2 sm:px-0">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
+                image={service.image}
                 title={service.title}
                 description={service.description}
               />
@@ -137,7 +149,7 @@ const Home = () => {
         </h2>
 
         {/* Download Button */}
-        <button className="bg-[#1D51A2] hover:bg-[#2E69D6] text-white font-semibold py-2 px-6 rounded-lg mb-10 cursor-pointer">
+        <button className="bg-[#1D51A2] hover:bg-[#2E69D6] text-white font-semibold py-2 px-6 rounded-lg mb-10 cursor-pointer text-sm sm:text-base">
           DOWNLOAD PROFILE
         </button>
 
@@ -157,7 +169,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <hr className="mt-10 border-gray-300 " />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8 mt-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-6 sm:mb-8 mt-12">
             Orbit Pulse
           </h2>
           <p className="text-[#5E5E5E] text-center">

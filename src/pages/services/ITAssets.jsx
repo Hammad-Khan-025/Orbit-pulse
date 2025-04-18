@@ -85,9 +85,9 @@ const ITAssets = () => {
         image={mainImage}
         title={
           <>
-            Complete IT Asset Disposition (ITAD) Solutions
+            Complete IT Asset Disposition 
             <br />
-            Secure. Sustainable. Streamlined.
+            (ITAD) Solutions. Secure. Sustainable. Streamlined.
           </>
         }
         description="A sequence of IT devices like computers, servers, and mobile phones evolving into a green, eco-conscious symbol, representing sustainable recycling practices."

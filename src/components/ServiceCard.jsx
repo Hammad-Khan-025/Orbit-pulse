@@ -1,9 +1,18 @@
 import React from "react";
+import Lottie from 'lottie-react';
 
-const ServiceCard = ({ title, description }) => {
+const ServiceCard = ({ title, description, image }) => {
   return (
     <div className="perspective group">
-      <div className="card bg-[#F4F4F4] rounded-tl-4xl rounded-br-4xl p-6 w-full h-full sm:w-[23rem] flex flex-col pt-32 px-8 sm:px-12 hover:bg-[#047BAF] transition-all duration-300 group-hover:-rotate-x-6 group-hover:rotate-y-6">
+      <div className="card bg-[#F4F4F4] rounded-tl-4xl rounded-br-4xl p-6 w-full h-full sm:w-[23rem] flex flex-col items-center px-8 sm:px-12 hover:bg-[#047BAF] transition-all duration-300 group-hover:-rotate-x-6 group-hover:rotate-y-6">
+        <div className="my-6">
+        <Lottie
+          animationData={image}
+          loop={true}
+          autoplay={true}
+          className="w-24 h-24"
+        />
+        </div>
         <h3 className="text-xl font-bold text-[#00BDFF] mb-4 group-hover:text-white transition-all duration-300 text-center">
           {title}
         </h3>

@@ -4,6 +4,9 @@ import WirelessImage from "../../assets/servicesImages/Wireless-survey/wirelessS
 import WifiConnect from "../../assets/servicesImages/Wireless-survey/wifiConnectImage.png";
 import WirelessConnect from "../../assets/servicesImages/Wireless-survey/wirelessConnectImage.png";
 import authorizedImage from "../../assets/servicesImages/Wireless-survey/authorizedImage.png";
+import predictiveImage from "../../assets/servicesImages/Wireless-survey/predictiveImage.png";
+import activeImage from "../../assets/servicesImages/Wireless-survey/activeImage.png";
+import passiveImage from "../../assets/servicesImages/Wireless-survey/passiveImage.png";
 import bgGroup from "../../assets/servicesImages/IT-infrastructure-services/bgGroup.png";
 import BorderLine from "../../components/BorderLine";
 import ServiceBanner from "../../components/ServicesBanner";
@@ -118,18 +121,22 @@ const WirelessSurvey = () => {
             <h3 className="text-[#1D51A2] font-bold text-lg">
               Predictive Surveys
             </h3>
-            <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
+            <p className="text-[#5E5E5E] text-sm mt-1 leading-7">
               Carried out before moving into a new location, predictive surveys
               are designed to determine the best placement for access points
               (APs) to ensure maximum coverage and performance across the area.
             </p>
           </div>
-          <div className="bg-blue-400 h-36 w-full"></div>
+          <img
+            src={predictiveImage}
+            alt="Predictive Survey"
+            className="w-full h-44 object-cover"
+          />
 
           {/* Active Surveys */}
           <div>
             <h3 className="text-[#1D51A2] font-bold text-lg">Active Surveys</h3>
-            <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
+            <p className="text-[#5E5E5E] text-sm mt-1 leading-7">
               These surveys are performed while the network is fully
               operational, focusing on specific signals or sets of signals.
               <br />
@@ -138,14 +145,18 @@ const WirelessSurvey = () => {
               the coverage area.
             </p>
           </div>
-          <div className="bg-blue-400 h-36 w-full"></div>
+          <img
+            src={activeImage}
+            alt="Predictive Survey"
+            className="w-full h-44 object-cover"
+          />
 
           {/* Passive Surveys */}
           <div>
             <h3 className="text-[#1D51A2] font-bold text-lg">
               Passive Surveys
             </h3>
-            <p className="text-[#5E5E5E] text-sm mt-1 leading-relaxed">
+            <p className="text-[#5E5E5E] text-sm mt-1 leading-7">
               Conducted after the site is built, passive surveys capture data
               from all signals present in the environment.
               <br />
@@ -154,7 +165,11 @@ const WirelessSurvey = () => {
               affect wireless performance.
             </p>
           </div>
-          <div className="bg-blue-400 h-36 w-full"></div>
+          <img
+            src={passiveImage}
+            alt="Predictive Survey"
+            className="w-full h-44 object-cover"
+          />
         </div>
       </section>
 
@@ -170,7 +185,7 @@ const WirelessSurvey = () => {
               <h3 className="text-[#1D51A2] font-bold text-lg">
                 Passive Surveys
               </h3>
-              <p className="text-[#5E5E5E] text-sm leading-relaxed">
+              <p className="text-[#5E5E5E] text-sm leading-7">
                 At Orbit Pulse, we collaborate with you to understand your
                 unique needs, including the number of users, types of devices,
                 and the layout of your wireless network.
@@ -178,7 +193,7 @@ const WirelessSurvey = () => {
             </div>
             <div>
               <h3 className="text-[#1D51A2] font-bold text-lg">Site Survey:</h3>
-              <p className="text-[#5E5E5E] text-sm leading-relaxed">
+              <p className="text-[#5E5E5E] text-sm leading-7">
                 Using Ekahau software, we conduct a comprehensive site survey to
                 assess your network coverage, identifying areas with weak signal
                 strength or interference.
@@ -188,7 +203,7 @@ const WirelessSurvey = () => {
               <h3 className="text-[#1D51A2] font-bold text-lg">
                 Design and Optimization:
               </h3>
-              <p className="text-[#5E5E5E] text-sm leading-relaxed">
+              <p className="text-[#5E5E5E] text-sm leading-7">
                 Leveraging Ekahau's advanced features, we optimize your network
                 design, ensuring ideal access point placement and efficient
                 coverage across your space.
@@ -202,7 +217,7 @@ const WirelessSurvey = () => {
             <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-[#1D51A2] font-bold text-lg">Reporting:</h3>
-                <p className="text-[#5E5E5E] text-sm leading-relaxed">
+                <p className="text-[#5E5E5E] text-sm leading-7">
                   We deliver detailed reports that summarize our findings,
                   providing a coverage map and recommendations for access point
                   positioning to improve performance.
@@ -212,7 +227,7 @@ const WirelessSurvey = () => {
                 <h3 className="text-[#1D51A2] font-bold text-lg">
                   Post-Survey Support:
                 </h3>
-                <p className="text-[#5E5E5E] text-sm leading-relaxed">
+                <p className="text-[#5E5E5E] text-sm leading-7">
                   Our team offers continued support to guarantee that your
                   wireless network maintains optimal performance and
                   reliability.
@@ -228,7 +243,7 @@ const WirelessSurvey = () => {
                 <h3 className="text-[#1D51A2] font-bold text-lg">
                   Global Authorized Ekahau Partners and Resellers
                 </h3>
-                <p className="text-[#5E5E5E] text-sm leading-relaxed mt-2">
+                <p className="text-[#5E5E5E] text-sm  mt-2 leading-7">
                   As authorized Ekahau partners and resellers worldwide, we
                   offer the highly popular Ekahau Connect package, the most
                   comprehensive Wi-Fi measurement solution available today.
@@ -236,7 +251,7 @@ const WirelessSurvey = () => {
                 <h1 className="mt-2 text-[#1D51A2] font-bold">
                   Our Offerings include:
                 </h1>
-                <ul className="list-disc pl-5 text-[#5E5E5E] text-sm leading-relaxed mt-1">
+                <ul className="list-disc pl-5 text-[#5E5E5E] text-sm  mt-1 leading-7">
                   <li>
                     <span className="font-bold text-gray-800">Ekahau Pro:</span>{" "}
                     A powerful software for planning, radio coverage analysis,
