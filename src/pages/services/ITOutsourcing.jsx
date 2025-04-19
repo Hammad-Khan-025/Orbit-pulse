@@ -12,6 +12,8 @@ import icon8 from "../../assets/servicesImages/IT-outsourcing/icon8.png";
 import icon9 from "../../assets/servicesImages/IT-outsourcing/icon9.png";
 import icon10 from "../../assets/servicesImages/IT-outsourcing/icon10.png";
 import talentPool from "../../assets/servicesImages/IT-outsourcing/talentPool.png";
+import Lottie from "lottie-react";
+import animation from "../../assets/Animation/IT-Outsourcing/Animation.json";
 import ServiceBanner from "../../components/ServicesBanner";
 import BorderLine from "../../components/BorderLine";
 
@@ -143,7 +145,7 @@ const ITOutsourcing = () => {
           outsourcing partners, your operations can continue seamlessly around
           the clock.
         </p>
-        <img
+        {/* <img
           ref={clockImageRef}
           src={clockImage}
           alt="Clock"
@@ -153,7 +155,15 @@ const ITOutsourcing = () => {
         ? "sm:opacity-100 sm:translate-x-0"
         : "sm:opacity-0 sm:translate-x-80"
     }`}
-        />
+        /> */}
+        <div className="-mb-12 sm:-mb-32 sm:-mt-10">
+          <Lottie
+            animationData={animation}
+            loop={true}
+            autoplay={true}
+            className="max-w-4xl"
+          />
+        </div>
       </section>
 
       <div className="mt-8 px-5 max-w-4xl mx-auto">

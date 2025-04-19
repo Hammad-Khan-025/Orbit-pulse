@@ -7,6 +7,8 @@ import bgGroup from "../../assets/servicesImages/IT-infrastructure-services/bgGr
 import bgGroupMobile from "../../assets/servicesImages/IT-infrastructure-services/bgGroupMobile.png";
 import endUser from "../../assets/servicesImages/IT-infrastructure-services/endUserImage.png";
 import platformer from "../../assets/servicesImages/IT-infrastructure-services/platformerImage.png";
+import Lottie from 'lottie-react';
+import animation from "../../assets/Animation/IT-Infrastructure/Animation.json";
 import BorderLine from "../../components/BorderLine";
 import ServiceBanner from "../../components/ServicesBanner";
 
@@ -80,16 +82,16 @@ const ITInfrastructureServices = () => {
         </p>
 
         {/* image section for desktop*/}
-        <div className="relative mt-8 w-full max-w-5xl hidden md:block">
+        {/* <div className="relative mt-8 w-full max-w-5xl hidden md:block">
           <img src={bgGroup} alt="" />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col sm:flex-row items-center justify-center">
             <img src={endUser} alt="" className="w-72" />
             <img src={platformer} alt="" className="w-72" />
           </div>
-        </div>
+        </div> */}
 
         {/* image section for mobile */}
-        <div>
+        {/* <div>
           <div className="relative my-8 w-full max-w-5xl md:hidden">
             <img src={bgGroupMobile} alt="" className="max-w-[18rem]" />
             <div className="absolute top-10 left-0 w-full h-full flex flex-col items-center justify-center">
@@ -102,6 +104,15 @@ const ITInfrastructureServices = () => {
               <img src={platformer} alt="" />
             </div>
           </div>
+        </div> */}
+
+        <div className="py-5">
+          <Lottie
+            animationData={animation}
+            loop={true}
+            autoplay={true}
+            className="max-w-4xl"
+          />
         </div>
       </section>
 
@@ -238,7 +249,7 @@ const ITInfrastructureServices = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 sm:mt-10 w-full max-w-4xl">
           <img src={summaryImage1} alt="working on laptop" />
-          <img src={summaryImage2} alt="working on laptop"/>
+          <img src={summaryImage2} alt="working on laptop" />
         </div>
       </section>
 

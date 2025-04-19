@@ -8,6 +8,8 @@ import predictiveImage from "../../assets/servicesImages/Wireless-survey/predict
 import activeImage from "../../assets/servicesImages/Wireless-survey/activeImage.png";
 import passiveImage from "../../assets/servicesImages/Wireless-survey/passiveImage.png";
 import bgGroup from "../../assets/servicesImages/IT-infrastructure-services/bgGroup.png";
+import Lottie from "lottie-react";
+import animation from "../../assets/Animation/Wireless-Survey/Animation.json";
 import BorderLine from "../../components/BorderLine";
 import ServiceBanner from "../../components/ServicesBanner";
 
@@ -25,9 +27,9 @@ const WirelessSurvey = () => {
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
         Optimizing Wireless Connectivity for Your Business
       </h2>
-      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-10 px-6 lg:px-16 py-6 ">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-0 py-6 max-w-5xl mx-auto">
         {/* Left Content */}
-        <div className="max-w-[36rem] text-start lg:text-left">
+        <div className="max-w-lg text-start lg:text-left">
           <p className="text-[#5E5E5E] leading-7">
             A wireless site survey is key to ensuring that your network offers
             strong, consistent coverage and performance. By conducting a survey,
@@ -55,11 +57,17 @@ const WirelessSurvey = () => {
         </div>
         {/* Right Content - Placeholder for Image */}
         <div className="">
-          <img
+          {/* <img
             src={WirelessImage}
             alt="Benefits of Managed IT Services"
             className="w-full max-w-xl"
-          />
+          /> */}
+            <Lottie
+              animationData={animation}
+              loop={true}
+              autoplay={true}
+              className=""
+            />
         </div>
       </section>
 
@@ -86,15 +94,15 @@ const WirelessSurvey = () => {
       </div>
 
       {/* border line */}
-      <div className="max-w-4xl mx-auto mt-14 hidden sm:block">
+      <div className="max-w-5xl mx-auto mt-14 hidden sm:block">
         <hr className="  border border-gray-300 " />
       </div>
 
-      <section className="flex flex-col items-center justify-center mt-10 mx-5">
+      <section className="flex flex-col items-center justify-center mt-10  max-w-5xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
           Ekahau-Powered Wireless Site Survey Services
         </h2>
-        <p className="text-[#5E5E5E] text-base font-bold max-w-4xl mt-5 leading-7">
+        <p className="text-[#5E5E5E] text-base font-bold mt-5 leading-7">
           At Orbit Pulse, we excel in providing wireless site surveys using
           Ekahau technology. Our skilled team of certified wireless engineers
           has extensive experience in designing and deploying wireless networks
