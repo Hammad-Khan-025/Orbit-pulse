@@ -329,7 +329,7 @@ const ITEndUserSupport = () => {
           <img src={icon3} alt="User IT Support" className="w-32 h-32" />
         </div>
 
-        <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-52 sm:w-[40rem]">
+        <div className="text-[#5E5E5E] flex flex-col sm:flex-row sm:gap-8 w-full sm:w-[40rem]">
           <ul className="list-disc pl-5">
             <li>Initial assistance for user queries and issues.</li>
             <li>

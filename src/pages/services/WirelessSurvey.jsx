@@ -57,17 +57,11 @@ const WirelessSurvey = () => {
         </div>
         {/* Right Content - Placeholder for Image */}
         <div className="">
-          {/* <img
+          <img
             src={WirelessImage}
             alt="Benefits of Managed IT Services"
             className="w-full max-w-xl"
-          /> */}
-            <Lottie
-              animationData={animation}
-              loop={true}
-              autoplay={true}
-              className=""
-            />
+          />
         </div>
       </section>
 
@@ -259,7 +253,7 @@ const WirelessSurvey = () => {
                 <h1 className="mt-2 text-[#1D51A2] font-bold">
                   Our Offerings include:
                 </h1>
-                <ul className="list-disc pl-5 text-[#5E5E5E] text-sm  mt-1 leading-7">
+                <ul className="list-disc ps-5 sm:ps-10 text-[#5E5E5E] text-sm  mt-1 leading-7">
                   <li>
                     <span className="font-bold text-gray-800">Ekahau Pro:</span>{" "}
                     A powerful software for planning, radio coverage analysis,
@@ -285,11 +279,18 @@ const WirelessSurvey = () => {
 
             {/* Right Side - Image spanning 2 rows */}
             <div className="row-span-2 flex justify-center">
-              <img
+              {/* <img
                 src={authorizedImage}
                 alt="Ekahau Survey"
                 className="h-full w-full object-cover"
-              />
+              /> */}
+              
+            <Lottie
+              animationData={animation}
+              loop={true}
+              autoplay={true}
+              className="w-full"
+            />
             </div>
           </div>
         </div>

@@ -32,33 +32,33 @@ const Header = () => {
         { name: "Flexible On-Support", path: "/services/flexible-on-support" },
       ],
     },
-    {
-      category: "Workspace Space Solutions",
-      services: [
-        { name: "Overview", path: "/services/workspace-solutions" },
-        { name: "Microsoft 365", path: "/services/microsoft-365" },
-        {
-          name: "Enterprise Mobility & Security",
-          path: "/services/enterprise-mobility",
-        },
-        {
-          name: "Workspace as a Service",
-          path: "/services/workspace-as-a-service",
-        },
-        {
-          name: "Business Central and Dynamics",
-          path: "/services/business-central",
-        },
-      ],
-    },
-    {
-      category: "Cloud Migration",
-      services: [
-        { name: "Overview", path: "/services/cloud-migration" },
-        { name: "Microsoft Azure", path: "/services/microsoft-azure" },
-        { name: "Amazon Web Services", path: "/services/aws" },
-      ],
-    },
+    // {
+    //   category: "Workspace Space Solutions",
+    //   services: [
+    //     { name: "Overview", path: "/services/workspace-solutions" },
+    //     { name: "Microsoft 365", path: "/services/microsoft-365" },
+    //     {
+    //       name: "Enterprise Mobility & Security",
+    //       path: "/services/enterprise-mobility",
+    //     },
+    //     {
+    //       name: "Workspace as a Service",
+    //       path: "/services/workspace-as-a-service",
+    //     },
+    //     {
+    //       name: "Business Central and Dynamics",
+    //       path: "/services/business-central",
+    //     },
+    //   ],
+    // },
+    // {
+    //   category: "Cloud Migration",
+    //   services: [
+    //     { name: "Overview", path: "/services/cloud-migration" },
+    //     { name: "Microsoft Azure", path: "/services/microsoft-azure" },
+    //     { name: "Amazon Web Services", path: "/services/aws" },
+    //   ],
+    // },
   ];
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -120,26 +120,26 @@ const Header = () => {
 
               {isDropdownOpen && (
                 <div
-                  className="absolute top-10 -left-32 mt-2 w-auto min-w-[12rem] lg:w-[53rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
+                  className="absolute top-10 -left-32 mt-2 w-auto min-w-[12rem] lg:w-[25rem] bg-[#EEEEEE] shadow-lg rounded-lg p-4 z-50 text-sm"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
+                  <div className="grid grid-cols-1  gap-8 p-5">
                     {menu.map((section) => (
                       <div key={section.category}>
                         <h4 className="font-bold text-[#1D51A2] mb-5 text-lg">
                           {section.category}
                         </h4>
-                        <ul className="space-y-5 text-gray-600">
+                        <ul className="space-y-3 text-gray-600">
                           {section.services.map(({ name, path }) => (
                             <li key={name}>
                               <NavLink
                                 to={path}
                                 className={({ isActive }) =>
-                                  `block transition-all duration-300 ${
+                                  `block transition-all duration-300 font-semibold  px-2 py-1 rounded-lg ${
                                     isActive
-                                      ? "bg-[#1D51A2] text-white font-semibold shadow-md px-2 py-1 rounded-lg"
-                                      : "hover:text-[#1D51A2]"
+                                      ? "bg-[#1D51A2] text-white "
+                                      : "hover:bg-[#6588c0] hover:text-white"
                                   }`
                                 }
                               >

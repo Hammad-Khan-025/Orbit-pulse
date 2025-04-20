@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop'; // <-- Import here
+
 import Home from './pages/Home';
 import ITManagedServices from './pages/services/ITManagedServices';
 import ITEndUserSupport from './pages/services/ITEndUserSupport';
@@ -16,6 +18,7 @@ import ITAssets from './pages/services/ITAssets';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

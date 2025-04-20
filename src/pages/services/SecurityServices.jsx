@@ -2,6 +2,7 @@ import React from "react";
 import ServiceBanner from "../../components/ServicesBanner";
 import mainImage from "../../assets/servicesImages/Security-services/mainImage.png";
 import overview from "../../assets/servicesImages/Security-services/overview.png";
+import approach from "../../assets/servicesImages/Security-services/approach.png";
 import icon1 from "../../assets/servicesImages/Security-services/icon1.png";
 import icon2 from "../../assets/servicesImages/Security-services/icon2.png";
 import icon3 from "../../assets/servicesImages/Security-services/icon3.png";
@@ -117,7 +118,7 @@ const SecurityServices = () => {
         {/* Right Content - Placeholder for Image */}
         <div className="">
           <img
-            src={overview}
+            src={approach}
             alt="Benefits of Managed IT Services"
             className="w-full max-w-md"
           />
@@ -139,22 +140,22 @@ const SecurityServices = () => {
           {networkSecurityData.map((service, index) => (
             <div key={index} className="group">
               <div
-                className={`w-80 sm:w-96 h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-8 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
+                className={`max-w-80 sm:w-96 max-h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-10 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
               >
                 {/* Image Icon */}
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-24 sm:w-32 h-24 sm:h-32 mb-3"
+                  className="w-20 sm:w-32 h-20 sm:h-32 mb-3"
                 />
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-[#434242] mb-2">
+                <h3 className="text-base sm:text-lg font-semibold text-[#434242] mb-2">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-[#5E5E5E]">{service.description}</p>
+                <p className="text-xs sm:text-sm text-[#5E5E5E]">{service.description}</p>
               </div>
             </div>
           ))}

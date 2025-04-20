@@ -3,6 +3,10 @@ import ServiceBanner from "../../components/ServicesBanner";
 import mainImage from "../../assets/servicesImages/IT-assets/mainImage.png";
 import assetsImage from "../../assets/servicesImages/IT-assets/assetsImage.png";
 import icon1 from "../../assets/servicesImages/IT-assets/icon1.png";
+import icon2 from "../../assets/servicesImages/IT-assets/icon2.png";
+import icon3 from "../../assets/servicesImages/IT-assets/icon3.png";
+import icon4 from "../../assets/servicesImages/IT-assets/icon4.png";
+import icon5 from "../../assets/servicesImages/IT-assets/icon5.png";
 import BorderLine from "../../components/BorderLine";
 
 const ITAssets = () => {
@@ -44,7 +48,7 @@ const ITAssets = () => {
         "Ensuring privacy protection and regulatory compliance",
       ],
       bgColor: "bg-[#FCB81326]",
-      image: icon1,
+      image: icon2,
     },
     {
       title: "Asset Value Recovery",
@@ -54,7 +58,7 @@ const ITAssets = () => {
         "Clear and competitive pricing",
       ],
       bgColor: "bg-[#3EA3DE26]",
-      image: icon1,
+      image: icon3,
     },
     {
       title: "Logistics & Transportation",
@@ -64,7 +68,7 @@ const ITAssets = () => {
         "Flexible scheduling for convenience",
       ],
       bgColor: "bg-[#3EA3DE26]",
-      image: icon1,
+      image: icon4,
     },
     {
       title: "Reporting & Certification",
@@ -74,7 +78,7 @@ const ITAssets = () => {
         "Adherence to international compliance standards.",
       ],
       bgColor: "bg-[#3EA3DE26]",
-      image: icon1,
+      image: icon5,
     },
   ];
 

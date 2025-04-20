@@ -11,6 +11,7 @@ import step3Icon from "../../assets/servicesImages/IT-managed-services/step3-ico
 import step4Icon from "../../assets/servicesImages/IT-managed-services/step4-icon.png";
 import BorderLine from "../../components/BorderLine";
 import ServiceBanner from "../../components/ServicesBanner";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Services = () => {
   const onboardingSteps = [
@@ -46,40 +47,42 @@ const Services = () => {
 
   const questions = [
     {
-      title: "Easy Setup",
-      description: "Get started quickly with a simple 4 steps process.",
+      title: "Advantages Of Orbit Pulse Support Services",
+      description: (
+        <ul className="list-disc list-inside ps-3 leading-7">
+          <li>You can access professional skills and resources</li>
+          <li>Allows you to customize your own IT service</li>
+          <li>You can shift from variable costs to monthly fee</li>
+          <li>Users can log tickets and request for services</li>
+        </ul>
+      ),
     },
     {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
+      title: "NOC & SOC Monitoring",
+      description: `Network Operations Center (NOC) and the System and Organization Controls (SOC) Monitoring enhances the security and IT integrity of your organization. These monitoring services play a significant role in helping your organization predict potential IT threats and prevent them from causing problems. Orbit Pulse possesses the right tools and resources that identify, manage, and take care of all your IT problems. We will effectively monitor the problems in your IT ecosystem.`,
     },
     {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
+      title: "Network Operation Centers (NOC)",
+      description: `NOC specifically controls, manages, and monitors network infrastructures. This monitoring service manages the technological equipment including router, server, switch, firewall, storage system, device management system, telecommunication system, wireless system, database system, and Internet of Things (IoT) device. Orbit Pulse personnel at NOCs constantly monitors 24/7/365 for any abnormalities, faults, critical events, and outages within the network.`,
     },
     {
-      title: "Easy Setup",
-      description: "Get started quickly with a simple 4 steps process.",
+      title: "Security Operations Center (SOC)",
+      description: `The SOC is a facility comprising the security team responsible for the analysis and monitoring of enterprise information systems including websites, applications, networks, desktops, servers and data centers. The main objective of this team is to detect, analyze, and respond to cybersecurity incidents or threats occurring within an enterprise network. Orbit Pulse takes care of all aspects of your security strategy including security strategy, security architecture, and protective measures.`,
     },
     {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
-    },
-    {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
-    },
-    {
-      title: "Easy Setup",
-      description: "Get started quickly with a simple 4 steps process.",
-    },
-    {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
-    },
-    {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
+      title: "Key Responsibilities of The SOC",
+      description: (
+        <ul className="list-disc list-inside ps-3 leading-7">
+          <li>Real-time triage and monitoring</li>
+          <li>Cyber Intel collection analysis</li>
+          <li>Creation, fusion, and distribution</li>
+          <li>
+            Examining event feeds, incident data, and collected malware for
+            proof of malicious activity.
+          </li>
+          <li>Malware and implant analysis</li>
+        </ul>
+      ),
     },
   ];
 
@@ -109,9 +112,9 @@ const Services = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const columns = [[], [], []];
+  const columns = [[], []];
   questions.forEach((item, index) => {
-    columns[index % 3].push({ ...item, originalIndex: index });
+    columns[index % 2].push({ ...item, originalIndex: index });
   });
 
   return (
@@ -244,26 +247,36 @@ const Services = () => {
       </section>
 
       {/* Questions section */}
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-5 sm:px-20 py-12 sm:py-20 max-w-[90rem] mx-auto">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-20 px-5 sm:px-20 py-12 sm:py-20 max-w-[90rem] mx-auto">
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="space-y-6">
-            {column.map((item) => (
-              <div key={item.originalIndex} className="border-b pb-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-md font-semibold">{item.title}</h3>
+            {column.map((item, index) => (
+              <div key={index} className="border-b pb-4">
+                <div className="flex items-center justify-between gap-2">
+                  <h3 className="text-base sm:text-lg font-semibold">
+                    {item.title}
+                  </h3>
                   <button
-                    className="w-8 h-8 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100"
-                    onClick={() => toggleAccordion(item.originalIndex)}
+                    className="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100 shrink-0"
+                    onClick={() => toggleAccordion(item.originalIndex ?? index)}
                   >
-                    <span className="text-gray-500 text-xl font-bold">
-                      {activeIndex === item.originalIndex ? "-" : "+"}
+                    <span className="text-gray-600 text-lg sm:text-xl font-bold">
+                      {activeIndex === (item.originalIndex ?? index) ? (
+                        <FaMinus />
+                      ) : (
+                        <FaPlus />
+                      )}
                     </span>
                   </button>
                 </div>
-                {activeIndex === item.originalIndex && (
-                  <p className="mt-2 text-sm text-gray-600">
-                    {item.description}
-                  </p>
+                {activeIndex === (item.originalIndex ?? index) && (
+                  <div className="mt-2 text-sm text-[#272727]">
+                    {typeof item.description === "string" ? (
+                      <p className="leading-7">{item.description}</p>
+                    ) : (
+                      item.description
+                    )}
+                  </div>
                 )}
               </div>
             ))}

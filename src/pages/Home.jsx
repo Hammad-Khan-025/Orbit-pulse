@@ -23,31 +23,37 @@ const Home = () => {
       image: animation1,
       title: "End-User Support",
       description: "Offering prompt and reliable IT support to streamline daily operations. From setup to troubleshooting, we ensure a seamless tech experience for maximum efficiency.",
+      path: "/services/IT-end-user-support",
     },
     {
       image: animation2,
       title: "IT INFRASTRUCTURE",
       description: "Designing scalable and resilient technology solutions to support your business growth and stability. From network infrastructure to data security, we ensure a seamless and secure IT environment.",
+      path: "/services/IT-infrastructure-management",
     },
     {
       image: animation3,
       title: "WIFI SURVEYS",
       description: "Improving wireless connectivity with comprehensive site surveys for seamless coverage and performance. We detect and fix signal issues, ensuring fast and dependable WiFi across your environment.",
+      path: "/services/wireless-survey",
     },
     {
       image: animation4,
       title: "FLEXIBLE-ON SITE",
       description: "Providing flexible on-site support to align with your operational requirements. Our team ensures seamless integration and prompt solutions, keeping your business running smoothly.",
+      path: "/services/IT-managed-services",
     },
     {
       image: animation5,
       title: "SECURITY SERVICES",
       description: "Building secure and scalable technology frameworks to drive your business’s growth and stability. From network infrastructure to data security, we ensure a reliable and seamless IT environment.",
+      path: "/services/managed-security",
     },
     {
       image: animation6,
       title: "IT Outsourcing",
       description: "Need expert support and a skilled team to keep your daily operations running smoothly? We offer scalable, round-the-clock assistance to ensure uninterrupted business performance.",
+      path: "/services/IT-outsourcing",
     },
     {
       image: animation7,
@@ -98,7 +104,6 @@ const Home = () => {
         fullWidth={true}
       />
 
-
       {/* Header Section */}
       <section className="text-center my-14 font-bangla px-3  max-w-6xl mx-auto">
         <h1 className="text-2xl sm:text-4xl font-bold text-[#FCB813] ">
@@ -127,15 +132,16 @@ const Home = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-[#047BAF] text-center mb-8">
           SUPPORTING YOUR JOURNEY
         </h2>
-        
+
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 items-stretch px-2 sm:px-0">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
-                image={service.image}
                 title={service.title}
                 description={service.description}
+                image={service.image}
+                path={service.path} // only defined for the first 6
               />
             ))}
           </div>
@@ -221,9 +227,9 @@ const Home = () => {
               <span>St Helens 1 Undershaft, London</span>
               <span>EC3P 3DQ</span>
             </p>
-            <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
+            {/* <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
               Learn More
-            </button>
+            </button> */}
           </div>
 
           <div className="border-b border-gray-300 pb-4">
@@ -235,9 +241,9 @@ const Home = () => {
               <span>St Helens 1 Undershaft, London</span>
               <span>EC3P 3DQ</span>
             </p>
-            <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
+            {/* <button className="mt-4 bg-[#F0B138] text-white font-semibold px-4 py-1 rounded-full hover:bg-yellow-500 cursor-pointer">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
 

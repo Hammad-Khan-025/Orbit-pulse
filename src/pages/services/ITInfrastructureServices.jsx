@@ -11,33 +11,26 @@ import Lottie from 'lottie-react';
 import animation from "../../assets/Animation/IT-Infrastructure/Animation.json";
 import BorderLine from "../../components/BorderLine";
 import ServiceBanner from "../../components/ServicesBanner";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const ITInfrastructureServices = () => {
   const questions = [
     {
-      title: "What is infrastructure Management?",
-      description: "Get started quickly with a simple 4 steps process.",
+      title: "What is infrastructure management?",
+      description: "Infrastructure management is the maintenance and upkeep of IT environments. It often includes change, patch and security management. Some businesses choose to outsource the management of their infrastructure as it requires close attention and internal IT teams often prefer to focus on innovative IT solutions rather than business as usual maintenance.",
     },
     {
-      title: "Why is infrastructure Management Important?",
-      description: "Keep track of performance and make adjustments.",
+      title: "Why is infrastructure management important?",
+      description: "Infrastructure management requires frequent attention. Patching, updating, securing and monitoring performance are all key to keeping the business running. If left unattended, infrastructure environments will inevitably fail, costing the business time, money and reputational damage.",
     },
     {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
+      title: "What are the components of infrastructure management?",
+      description: "The common components of infrastructure management are patch management, change management, asset management, capacity management, security management and on occasion, supplier management.",
     },
     {
-      title: "Monitor and Optimize",
-      description: "Get started quickly with a simple 4 steps process.",
-    },
-    {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
-    },
-    {
-      title: "Monitor and Optimize",
-      description: "Keep track of performance and make adjustments.",
-    },
+      title: "What causes poor infrastructure?",
+      description: "Poor infrastructure is often the result of poor planning and maintenance. Your infrastructure will impact which tools your employees can use, often creating or preventing competitive advantage. Poor maintenance results in security vulnerabilities and reduced performance, holding the business back from performing at its best.",
+    }
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -82,16 +75,16 @@ const ITInfrastructureServices = () => {
         </p>
 
         {/* image section for desktop*/}
-        {/* <div className="relative mt-8 w-full max-w-5xl hidden md:block">
+        <div className="relative mt-8 w-full max-w-5xl hidden md:block">
           <img src={bgGroup} alt="" />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col sm:flex-row items-center justify-center">
             <img src={endUser} alt="" className="w-72" />
             <img src={platformer} alt="" className="w-72" />
           </div>
-        </div> */}
+        </div>
 
         {/* image section for mobile */}
-        {/* <div>
+        <div>
           <div className="relative my-8 w-full max-w-5xl md:hidden">
             <img src={bgGroupMobile} alt="" className="max-w-[18rem]" />
             <div className="absolute top-10 left-0 w-full h-full flex flex-col items-center justify-center">
@@ -104,16 +97,9 @@ const ITInfrastructureServices = () => {
               <img src={platformer} alt="" />
             </div>
           </div>
-        </div> */}
-
-        <div className="py-5">
-          <Lottie
-            animationData={animation}
-            loop={true}
-            autoplay={true}
-            className="max-w-4xl"
-          />
         </div>
+
+        
       </section>
 
       <div className="max-w-3xl mx-auto">
@@ -133,7 +119,15 @@ const ITInfrastructureServices = () => {
         <div className="bg-[#1D51A2] text-white rounded-4xl px-5 sm:px-16 py-8 sm:py-10 mt-4 w-full max-w-3xl flex flex-col md:hidden">
           {/* Image and second list (mobile) */}
           <div className="flex flex-col items-center text-center mb-6">
-            <img src={settingsIcon} alt="icon" className="w-32 mb-2" />
+            {/* <img src={settingsIcon} alt="icon" className="w-32 mb-2" /> */}
+            <div className="">
+          <Lottie
+            animationData={animation}
+            loop={true}
+            autoplay={true}
+            className="w-32"
+          />
+        </div>
           </div>
 
           {/* First list */}
@@ -184,7 +178,15 @@ const ITInfrastructureServices = () => {
 
           {/* Image and second list */}
           <div className="flex-1 flex flex-col items-center text-center">
-            <img src={settingsIcon} alt="icon" className="w-32 mb-2" />
+            {/* <img src={settingsIcon} alt="icon" className="w-32 mb-2" /> */}
+            <div className="py-5">
+          <Lottie
+            animationData={animation}
+            loop={true}
+            autoplay={true}
+            className="w-36"
+          />
+        </div>
             <h3 className="font-semibold text-[#FCB813]">
               Our Infrastructure Management
             </h3>
@@ -270,19 +272,19 @@ const ITInfrastructureServices = () => {
                 key={item.originalIndex}
                 className="border-b border-[#464646] pb-4"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-3">
                   <h3 className="text-md font-semibold">{item.title}</h3>
                   <button
-                    className="w-8 h-8 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100 shrink-0"
+                    className="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center border rounded-full cursor-pointer hover:bg-gray-100 shrink-0"
                     onClick={() => toggleAccordion(item.originalIndex)}
                   >
-                    <span className="text-gray-500 text-xl font-bold">
-                      {activeIndex === item.originalIndex ? "-" : "+"}
+                    <span className="text-gray-600 text-base sm:text-lg font-bold">
+                      {activeIndex === item.originalIndex ? <FaMinus/> : <FaPlus/>}
                     </span>
                   </button>
                 </div>
                 {activeIndex === item.originalIndex && (
-                  <p className="mt-2 text-sm text-gray-600">
+                  <p className="mt-2 text-sm text-[#272727] leading-7">
                     {item.description}
                   </p>
                 )}

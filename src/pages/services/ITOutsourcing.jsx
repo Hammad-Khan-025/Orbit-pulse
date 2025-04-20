@@ -145,7 +145,7 @@ const ITOutsourcing = () => {
           outsourcing partners, your operations can continue seamlessly around
           the clock.
         </p>
-        {/* <img
+        <img
           ref={clockImageRef}
           src={clockImage}
           alt="Clock"
@@ -155,15 +155,8 @@ const ITOutsourcing = () => {
         ? "sm:opacity-100 sm:translate-x-0"
         : "sm:opacity-0 sm:translate-x-80"
     }`}
-        /> */}
-        <div className="-mb-12 sm:-mb-32 sm:-mt-10">
-          <Lottie
-            animationData={animation}
-            loop={true}
-            autoplay={true}
-            className="max-w-4xl"
-          />
-        </div>
+        />
+        
       </section>
 
       <div className="mt-8 px-5 max-w-4xl mx-auto">
@@ -234,11 +227,19 @@ const ITOutsourcing = () => {
 
           {/* Center Image */}
           <div className="flex justify-center">
-            <img
+            {/* <img
               src={talentPool}
               alt="Global Talent Pool Illustration"
               className="w-[250px] sm:w-[300px]"
-            />
+            /> */}
+            <div className="-mb-16 sm:-mb-0 -mt-10 sm:-mt-0 ">
+          <Lottie
+            animationData={animation}
+            loop={true}
+            autoplay={true}
+            className="w-full sm:w-72"
+          />
+        </div>
           </div>
 
           {/* Right Info Card */}
