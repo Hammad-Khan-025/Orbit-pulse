@@ -10,7 +10,7 @@ const ServiceBanner = ({ image, video, title, description }) => {
           autoPlay 
           loop 
           muted 
-          className="h-72 sm:h-auto object-cover w-full"
+          className="h-72 sm:h-[35rem] object-cover w-full"
         />
       ) : (
         <img 
