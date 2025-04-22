@@ -29,7 +29,7 @@ const Header = () => {
           name: "IT Asset Disposition Services",
           path: "/services/IT-assets-disposition",
         },
-        { name: "Flexible On-Support", path: "/services/flexible-onsite-support" },
+        { name: "Flexible On-Site Support", path: "/services/flexible-onsite-support" },
       ],
     },
     // {
