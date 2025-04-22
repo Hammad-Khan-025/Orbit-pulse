@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import ServiceBanner from "../../components/ServicesBanner";
 import mainImage from "../../assets/servicesImages/Flexible-onsite/mainImage.png";
 import img1 from "../../assets/servicesImages/Flexible-onsite/img1.png";
+import img2 from "../../assets/servicesImages/Flexible-onsite/img2.png";
+import img3 from "../../assets/servicesImages/Flexible-onsite/img3.png";
+import img4 from "../../assets/servicesImages/Flexible-onsite/img4.png";
+import img5 from "../../assets/servicesImages/Flexible-onsite/img5.png";
+import img6 from "../../assets/servicesImages/Flexible-onsite/img6.png";
+import img7 from "../../assets/servicesImages/Flexible-onsite/img7.png";
+import img8 from "../../assets/servicesImages/Flexible-onsite/img8.png";
 import icon1 from "../../assets/servicesImages/Flexible-onsite/icon1.png";
 import icon2 from "../../assets/servicesImages/Flexible-onsite/icon2.png";
 import icon3 from "../../assets/servicesImages/Flexible-onsite/icon3.png";
@@ -11,6 +18,107 @@ import BorderLine from "../../components/BorderLine";
 import { FaCheck } from "react-icons/fa";
 
 const FlexibleOnSite = () => {
+
+  const tabs = [
+    {
+      title: "Local IT Support",
+      content: (
+        <>
+          Your users need comprehensive support, including on-site. We are happy to provide specialists (or teams) who support and advise your users on-site with technical questions and problem solving. Your local IT is relieved and can focus on other activities.
+          <br />
+          <br />
+          By choosing Orbit Pulse, you’re not just opting for an IT solution; you’re partnering with a community-focused ally who understands your unique challenges. Let our local expertise bring peace of mind to your business operations, ensuring your technology works seamlessly and efficiently. With Orbit Pulse at your side, you’ve got a local IT champion, dedicated to empowering your success.
+        </>
+      ),
+      image: img1,
+    },
+    {
+      title: "Helping Smarthands",
+      content: (
+        <>
+          Regardless of the expanse of your data center, having a competent on-site technical support team to provide immediate assistance in times of technical failure and service disruptions will always be of great help. While you have the option to hire a certified technician who will be stationed inside your company’s data center, it is not always the perfect choice.
+          <br />
+          <br />
+          One of the most efficient and popular alternatives to hiring certified technicians is getting Smart Hands services. Aside from being versatile and highly reliable, Smart Hands services are also less expensive to maintain since these qualified data center technicians are capable of performing a number of tasks instantly and with accuracy.
+        </>
+      ),
+      image: img2,
+    },
+    {
+      title: "Retail IT Services",
+      content: (
+        <>
+          We have proved ourselves best in the installation of people counter and footfall solutions for retail industry. Our expertise includes People/Traffic Counters installation, Footfall Solutions, Pre and Post Install Surveys, Maintenance/Troubleshooting, Hardware & Software Installation.
+          <br />
+          <br />
+          Orbit Pulse stands by retailers, offering tailored IT support that drives sales, satisfies customers, and streamlines operations. Let Orbit Pulse be your partner in retail success, where technology meets commerce seamlessly.
+        </>
+      ),
+      image: img3,
+    },
+    {
+      title: "IMAC",
+      content: (
+        <>
+          Orbit Pulse provides One-Stop solution for all your business requirements such as upgradations and relocations, our specially designed IMAC services are cost effective, flexible and completes well on time to fulfil your organization’s needs.
+          <br />
+          <br />
+          Whether you’re setting up a new system, relocating your business, expanding your network, or making pivotal changes, Orbit Pulse stands ready to assist with precision and efficiency. With our experienced team overseeing your IMAC needs, you’re guaranteed minimized downtime and seamless transitions. Trust Orbit Pulse to handle the complexities of IMAC, so you can stay focused on propelling your business forward.
+        </>
+      ),
+      image: img4,
+    },
+    {
+      title: "DATA CENTER SUPPORT",
+      content: (
+        <>
+          Orbit Pulse provides on-site Data Center Hardware / Software installation and troubleshooting services to our valued clients with our Centralized highly qualified offshore support team.
+          <br />
+          <br />
+          From infrastructure management to round-the-clock monitoring, our dedicated team prioritizes the integrity, security, and efficiency of your data assets. With a keen understanding of the intricacies of modern data centers, Orbit Pulse offers tailored solutions to meet the unique demands of your enterprise. Align with us, and empower your business with a robust data backbone, upheld by industry-leading expertise and unwavering commitment.
+        </>
+      ),
+      image: img5,
+    },
+    {
+      title: "ITAD Services",
+      content: (
+        <>
+          Reduce complexity and recover additional value with Orbit Pulse’ complete IT asset disposition (ITAD) services: refurbishment, data erasure and compliant e-cycling.
+          <br />
+          <br />
+          In a rapidly evolving digital landscape, managing the lifecycle of IT assets is more critical than ever. Orbit Pulse presents its premier IT Asset Disposition (ITAD) services, meticulously designed to safeguard your company’s reputation and the environment. We ensure that outdated or redundant IT equipment is disposed of securely, ethically, and in an eco-friendly manner. From data sanitization to responsible recycling, Orbit Pulse stands as your trusted partner, mitigating risks and ensuring compliance with global standards. Embrace a sustainable and secure future with Orbit Pulse’s ITAD services, where every asset is treated with the utmost responsible.
+        </>
+      ),
+      image: img6,
+    },
+    {
+      title: "Lifecycle Support",
+      content: (
+        <>
+          With our tried-and-tested onsite IT services, we are at your side on-site – be it permanently or at fixed intervals – and take over the support for you. We look after your end devices throughout their entire lifecycle: from installation and setup to support and dismantling. We also take care of peripheral devices, servers, and networks. Another plus: With their excellent knowledge of technology, our support staff are not only prepared for any situation, but also proactively and effectively prevent faults and failures. For maximum efficiency, we integrate our onsite IT services into our central service desk. In this way, we bring structure and orderly processes to local support activities. The downstream central 2nd level support teams ensure that no problem remains unsolved, and your employees can concentrate fully on their tasks.
+        </>
+      ),
+      image: img7,
+    },
+    {
+      title: "Retainers Model",
+      content: (
+        <>
+          Retainer is one highly useful form of equipment coverage that we provide to our valued clients. We have multiple SLAs and retainer contracts that we offer to our clients.
+          <br />
+          <br />
+          Our retainer model ensures that you have dedicated specialists at your disposal, always ready to address challenges, optimize processes, and introduce innovations. This proactive approach ensures uninterrupted operations, minimized downtimes, and a technological edge over competitors. Partner with Orbit Pulse and integrate our Retainers Service into your strategy, ensuring your IT infrastructure remains robust, compliant, and future-ready.
+        </>
+      ),
+      image: img8,
+    },
+  ];
+  
+  
+  
+
+  const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const features = [
     {
@@ -127,58 +235,39 @@ const FlexibleOnSite = () => {
         Managed Cybersecurity Services
       </h2>
 
-      {/* Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm">
-        <button className="bg-[#FCB8134D] text-[#5E5E5E] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          Local IT Support
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          Helping Smarthands
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          Retail IT Services
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          IMAC
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          DATA CENTER SUPPORT
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          ITAD Services
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          Lifecycle Support
-        </button>
-        <button className="text-[#5E5E5E] bg-[#3EA3DE4D] cursor-pointer font-semibold py-2 px-2 rounded shadow">
-          Retainers Model
-        </button>
-      </div>
+            {tabs.map((tab, index) => (
+              <button
+                key={index}
+                className={`py-2 px-2 rounded shadow font-semibold cursor-pointer ${
+                  activeTab.title === tab.title
+                    ? "bg-[#FCB8134D] text-[#5E5E5E]"
+                    : "bg-[#3EA3DE4D] text-[#5E5E5E]"
+                }`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.title}
+              </button>
+            ))}
+          </div>
 
-      {/* Content Section */}
-      <div className="px-5 sm:px-0">
-          <h3 className="text-xl font-bold text-blue-700 my-6 sm:my-8 text-center">LOCAL IT SUPPORT</h3>
-        <div className="flex flex-col sm:flex-row items-center gap-6 my-6">
-          <p className="text-[#5E5E5E] mb-4 max-w-xl leading-7">
-            Your users need comprehensive support, including on-site. We are happy to provide specialists (or teams)
-            who support and advise your users on site with technical questions and problem solving. Your local IT is
-            relieved and can focus on other activities.
-          <br />
-          <br />
-            By choosing IP Global, you’re not just opting for an IT solution; you’re partnering with a community-focused
-            ally who understands your unique challenges. Let our local expertise bring peace of mind to your business
-            operations, ensuring your technology works seamlessly and efficiently. With IP Global at your side, you’ve
-            got a local IT champion, dedicated to empowering your success.
-          </p>
-        <div>
-          <img
-            src={img1}
-            alt="Local IT Support"
-            className="rounded-xl shadow-md w-full object-cover"
-          />
-        </div>
-        </div>
-      </div>
+          <div className="px-5 sm:px-0">
+            <h3 className="text-xl font-bold text-blue-700 my-6 sm:my-8 text-center">
+              {activeTab.title.toUpperCase()}
+            </h3>
+            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 my-6">
+              <p className="text-[#5E5E5E] mb-4 max-w-xl leading-7 sm:w-1/2">
+                {activeTab.content}
+              </p>
+              <div className="sm:w-1/2">
+                <img
+                  src={activeTab.image}
+                  alt={activeTab.title}
+                  className="rounded-xl shadow-md w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
     </div>
       </section>
 
@@ -200,7 +289,7 @@ const FlexibleOnSite = () => {
       <div className="md:flex justify-between items-start mb-10">
         <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 md:mb-0">Our Onsite IT Engineer</h2>
         <p className="md:w-1/2 text-gray-600 text-sm leading-7">
-          IP Global assigns you an onsite engineer to help you in the case of an emergency.
+          Orbit Pulse assigns you an onsite engineer to help you in the case of an emergency.
           <br />
           Our onsite engineer is well-trained to offer you first-line support to help you
           resume your business operations expeditiously.
