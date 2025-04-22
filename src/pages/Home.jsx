@@ -1,5 +1,5 @@
 import React from "react";
-import mainImage from "../assets/homeImages/mainImage.png";
+import homeVideo from "../assets/homeImages/homeVid.mp4";
 import companyProfile from "../assets/homeImages/companyProfileLogo.png";
 import feature1Img from "../assets/homeImages/feature1Img.png";
 import feature2Img from "../assets/homeImages/feature2Img.png";
@@ -98,10 +98,9 @@ const Home = () => {
     <article>
       {/* Banner section */}
       <ServiceBanner
-        image={mainImage}
+      video={homeVideo}
         title="STRENGTHEN YOUR BUSINESS WITH OUR RELIABLE IT SUPPORT!"
         description="We start by identifying your challenges and deliver tailored solutions that seamlessly fit your business needs."
-        fullWidth={true}
       />
 
       {/* Header Section */}
