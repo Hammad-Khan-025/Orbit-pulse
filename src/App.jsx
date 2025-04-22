@@ -30,7 +30,7 @@ function App() {
         <Route path="/services/IT-outsourcing" element={<ITOutsourcing />} /> 
         <Route path="/services/managed-security" element={<SecurityServices />} />
         <Route path="/services/IT-assets-disposition" element={<ITAssets />} />
-        <Route path="/services/flexible-onsite-support" element={<FlexibleOnSite />} />
+        <Route path="/services/flexible-on-support" element={<FlexibleOnSite />} />
         <Route path="/contact-us" element={<Contact />} />
       </Routes>
       <Footer />
