@@ -263,7 +263,7 @@ const FlexibleOnSite = () => {
                 <img
                   src={activeTab.image}
                   alt={activeTab.title}
-                  className="rounded-xl shadow-md w-full object-cover"
+                  className="w-full object-cover"
                 />
               </div>
             </div>
