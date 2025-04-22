@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import mainImage from "../assets/contactImages/contact-bg.png";
-import contactVideo from "../assets/contactImages/contact-vid.mp4";
+import mainImage from "../assets/contactImages/contactBG.png";
+import contactVideo from "../assets/contactImages/contactVideo.mp4";
 import ContactModal from "../components/ContactModel";
 
 const Contact = () => {
