@@ -12,8 +12,9 @@ import WirelessSurvey from './pages/services/WirelessSurvey';
 import ITOutsourcing from './pages/services/ITOutsourcing';
 import SecurityServices from './pages/services/SecurityServices';
 import ITAssets from './pages/services/ITAssets';
+import FlexibleOnSite from './pages/services/FlexibleOnSite';
 // import AboutUs from './pages/AboutUs';
-// import ContactUs from './pages/ContactUs';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path="/services/IT-outsourcing" element={<ITOutsourcing />} /> 
         <Route path="/services/managed-security" element={<SecurityServices />} />
         <Route path="/services/IT-assets-disposition" element={<ITAssets />} />
-        {/* <Route path="/contact-us" element={<ContactUs />} /> */}
+        <Route path="/services/flexible-onsite-support" element={<FlexibleOnSite />} />
+        <Route path="/contact-us" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

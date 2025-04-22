@@ -29,7 +29,7 @@ const Header = () => {
           name: "IT Asset Disposition Services",
           path: "/services/IT-assets-disposition",
         },
-        { name: "Flexible On-Support", path: "/services/flexible-on-support" },
+        { name: "Flexible On-Support", path: "/services/flexible-onsite-support" },
       ],
     },
     // {
@@ -80,7 +80,7 @@ const Header = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center h-40 tracking-wider font-semibold px-6 lg:px-20 relative z-50 bg-white max-w-screen-xl mx-auto">
+    <header className="flex justify-between items-center h-40 tracking-wider font-semibold px-6 lg:px-20 relative z-40 bg-white max-w-screen-xl mx-auto">
       <NavLink to="/" className="flex-shrink-0">
         <img src={logo} alt="OrbitPulse Logo" className="w-52 lg:w-72" />
       </NavLink>

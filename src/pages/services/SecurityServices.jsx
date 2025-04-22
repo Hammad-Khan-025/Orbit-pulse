@@ -57,7 +57,7 @@ const SecurityServices = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center">
             OVERVIEW
           </h2>
-          <ul className="text-[#5E5E5E] leading-10 max-w-[40rem] lg:text-left list-disc">
+          <ul className="text-[#5E5E5E] leading-8 sm:leading-10 max-w-[40rem] lg:text-left list-disc">
             <li>
               We offer managed security services to oversee and manage your
               organization's security operations
@@ -93,7 +93,7 @@ const SecurityServices = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center sm:mt-12">
             OUR APPROACH
           </h2>
-          <ul className="text-[#5E5E5E] leading-10 max-w-[40rem] lg:text-left list-disc">
+          <ul className="text-[#5E5E5E] leading-8 sm:leading-10 max-w-[40rem] lg:text-left list-disc">
             <li>
               We enhance your security program with customized services,
               including threat management, cloud security, infrastructure
@@ -140,7 +140,7 @@ const SecurityServices = () => {
           {networkSecurityData.map((service, index) => (
             <div key={index} className="group">
               <div
-                className={`max-w-80 sm:w-96 max-h-80 sm:h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-10 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
+                className={`max-w-80 sm:max-w-96 max-h-80 sm:max-h-96 ${service.bgColor} rounded-full flex flex-col items-center justify-center text-center p-10 sm:p-16 shrink-0 group-hover:shadow-xl shadow-[#3EA3DE4D] transition-shadow duration-300`}
               >
                 {/* Image Icon */}
                 <img

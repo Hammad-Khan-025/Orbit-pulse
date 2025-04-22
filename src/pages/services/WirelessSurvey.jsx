@@ -27,7 +27,7 @@ const WirelessSurvey = () => {
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-[600] text-[#FCB813] mb-4 font-kannada text-center mt-12">
         Optimizing Wireless Connectivity for Your Business
       </h2>
-      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-0 py-6 max-w-5xl mx-auto">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-0 py-6 max-w-5xl mx-auto px-5 sm:px-0">
         {/* Left Content */}
         <div className="max-w-lg text-start lg:text-left">
           <p className="text-[#5E5E5E] leading-7">
@@ -92,7 +92,7 @@ const WirelessSurvey = () => {
         <hr className="  border border-gray-300 " />
       </div>
 
-      <section className="flex flex-col items-center justify-center mt-10  max-w-5xl mx-auto">
+      <section className="flex flex-col items-center justify-center mt-10  max-w-5xl mx-auto px-5 sm:px-0">
         <h2 className="text-xl sm:text-2xl font-semibold text-[#1D51A2] text-center sm:text-start">
           Ekahau-Powered Wireless Site Survey Services
         </h2>

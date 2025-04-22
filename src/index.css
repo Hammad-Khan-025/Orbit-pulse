@@ -51,3 +51,9 @@
 }
 
 
+/* You can add this to your CSS file */
+.swal-popup-large {
+  width: 500px; /* Set the width of the container */
+  height: 300px; /* Set the height of the container */
+  font-size: 20px; /* Adjust the font size */
+}
