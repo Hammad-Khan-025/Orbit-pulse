@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mainImage from "../assets/contactImages/contactBG.png";
+import mainImage from "../assets/contactImages/mainImage.png";
 import contactVideo from "../assets/contactImages/contactVideo.mp4";
 import ContactModal from "../components/ContactModel";
 
