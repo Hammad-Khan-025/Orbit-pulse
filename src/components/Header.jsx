@@ -80,9 +80,9 @@ const Header = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center h-40 tracking-wider font-semibold px-6 lg:px-20 relative z-40 bg-white max-w-screen-xl mx-auto">
+    <header className="flex justify-between items-center h-32 sm:h-40 tracking-wider font-semibold px-6 lg:px-20 relative z-40 bg-white max-w-screen-xl mx-auto">
       <NavLink to="/" className="flex-shrink-0">
-        <img src={logo} alt="OrbitPulse Logo" className="w-52 lg:w-72" />
+        <img src={logo} alt="OrbitPulse Logo" className="w-48 lg:w-56" />
       </NavLink>
 
       <div className="flex items-center">
@@ -174,7 +174,7 @@ const Header = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute top-40 left-0 w-full bg-white shadow-md lg:hidden p-5 z-50">
+        <div className="absolute top-32 left-0 w-full bg-white shadow-md lg:hidden p-5 z-50">
           <ul className="flex flex-col gap-4 text-[#8D8D8D]">
             <li>
               <NavLink

@@ -252,10 +252,10 @@ const FlexibleOnSite = () => {
           </div>
 
           <div className="px-5 sm:px-0">
-            <h3 className="text-xl font-bold text-blue-700 my-6 sm:my-8 text-center">
+            <h3 className="text-xl font-bold text-[#1D51A2] my-6 sm:my-8 text-center">
               {activeTab.title.toUpperCase()}
             </h3>
-            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 my-6">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 my-6">
               <p className="text-[#5E5E5E] mb-4 max-w-xl leading-7 sm:w-1/2">
                 {activeTab.content}
               </p>
@@ -275,7 +275,7 @@ const FlexibleOnSite = () => {
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
         {features.map(({ number, title, description }) => (
           <div key={number} className="space-y-1 flex gap-5 sm:gap-8">
-            <h3 className="text-blue-700 text-xl sm:text-3xl font-semibold">{number}</h3>
+            <h3 className="text-[#1D51A2] text-xl sm:text-3xl font-semibold">{number}</h3>
             <div>
             <p className="font-semibold text-gray-900 my-1 sm:my-2">{title}</p>
             <p className="text-gray-600 text-sm">{description}</p>
@@ -287,7 +287,7 @@ const FlexibleOnSite = () => {
 
     <div className="max-w-6xl mx-auto px-4 sm:px-0 py-6 sm:py-10 pb-10">
       <div className="md:flex justify-between items-start mb-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 md:mb-0">Our Onsite IT Engineer</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#1D51A2] mb-4 md:mb-0">Our Onsite IT Engineer</h2>
         <p className="md:w-1/2 text-gray-600 text-sm leading-7">
           Orbit Pulse assigns you an onsite engineer to help you in the case of an emergency.
           <br />
@@ -302,7 +302,7 @@ const FlexibleOnSite = () => {
           key={index}
           className="group flex flex-col items-center sm:items-start rounded-lg px-6 sm:px-10 py-10 sm:py-12 shadow-md border border-gray-100 hover:bg-[#3EA3DE] transition duration-300"
         >
-          <img src={service.icon} alt={service.title} className="w-16 h-16 text-blue-600" />
+          <img src={service.icon} alt={service.title} className="w-16 h-16 " />
           <p className="mt-6 sm:mt-8 text-sm font-medium text-gray-800 group-hover:text-white">
             {service.title}
           </p>
@@ -312,7 +312,7 @@ const FlexibleOnSite = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between gap-6 sm:gap-20 mt-12 sm:mb-6">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:w-60">Our Strategy</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:w-60 text-[#1D51A2]">Our Strategy</h2>
       <ul className="space-y-4">
         <li className="flex items-start">
           <span className="bg-[#3EA3DE] p-1 rounded-full text-white text-xs shrink-0"><FaCheck /></span>

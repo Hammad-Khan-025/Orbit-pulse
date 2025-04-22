@@ -35,11 +35,15 @@ const Contact = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.firstName.trim()) newErrors.firstName = "First Name is required*";
-    if (!formData.lastName.trim()) newErrors.lastName = "Last Name is required*";
+    if (!formData.firstName.trim())
+      newErrors.firstName = "First Name is required*";
+    if (!formData.lastName.trim())
+      newErrors.lastName = "Last Name is required*";
     if (!formData.email.trim()) newErrors.email = "Email is required*";
-    if (!formData.jobTitle.trim()) newErrors.jobTitle = "Job Title is required*";
-    if (!formData.notRobot) newErrors.notRobot = "Please confirm you are not a robot*";
+    if (!formData.jobTitle.trim())
+      newErrors.jobTitle = "Job Title is required*";
+    if (!formData.notRobot)
+      newErrors.notRobot = "Please confirm you are not a robot*";
 
     // Check that at least one checkbox is selected in the "Requesting" field
     if (
@@ -122,7 +126,7 @@ const Contact = () => {
 
           {/* Right Section */}
           <div className="border border-gray-200 shadow-2xl">
-            <video src={contactVideo} controls></video>
+            <video src={contactVideo} autoPlay loop muted></video>
           </div>
         </div>
       </section>
@@ -191,7 +195,9 @@ const Contact = () => {
                     className="w-full border border-gray-300 p-2 rounded focus:ring-blue-500 focus:border-blue-500"
                   />
                   {errors.firstName && (
-                    <p className="text-red-600 text-sm mt-2">{errors.firstName}</p>
+                    <p className="text-red-600 text-sm mt-2">
+                      {errors.firstName}
+                    </p>
                   )}
                 </div>
                 <div className="w-full">
@@ -204,7 +210,9 @@ const Contact = () => {
                     className="w-full border border-gray-300 p-2 rounded focus:ring-blue-500 focus:border-blue-500"
                   />
                   {errors.lastName && (
-                    <p className="text-red-600 text-sm mt-2">{errors.lastName}</p>
+                    <p className="text-red-600 text-sm mt-2">
+                      {errors.lastName}
+                    </p>
                   )}
                 </div>
               </div>
@@ -246,9 +254,7 @@ const Contact = () => {
 
             {/* Phone Number */}
             <div>
-              <label className="block font-bold mt-6 mb-3">
-                Phone Number
-              </label>
+              <label className="block font-bold mt-6 mb-3">Phone Number</label>
               <input
                 type="text"
                 name="phone"
@@ -298,7 +304,10 @@ const Contact = () => {
 
       {/* Custom Success Modal */}
       {isModalOpen && (
-        <ContactModal message="Form submitted successfully!" onClose={closeModal} />
+        <ContactModal
+          message="Form submitted successfully!"
+          onClose={closeModal}
+        />
       )}
     </article>
   );
